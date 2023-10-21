@@ -79,7 +79,7 @@ const Homeproducts = () => {
             </div>
             <div className="product-card">
               <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor</h4>
+              <h4 className="prod-card-title">I Beam Coveyor...</h4>
               <div className="product-card-content">
                 <p className="prod-content">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
