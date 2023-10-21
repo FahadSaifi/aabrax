@@ -1,0 +1,57 @@
+.home-about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.home-about-left-col,
+.home-about-right-col {
+  width: 45%;
+}
+
+.home-about-img {
+  display: block;
+  width: 100%;
+}
+
+.home-about-heading {
+  font-size: 17px;
+  font-weight: 500;
+  color: silver;
+  margin: 5px 0;
+}
+
+.home-about-second-heading {
+  margin: 1px 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.side-border {
+  padding-left: 16px;
+  border-left: 6px solid #febf32;
+}
+
+.home-about-description {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.hero-about-btn {
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  background: #febf32;
+  font-size: 14px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 26px;
+}

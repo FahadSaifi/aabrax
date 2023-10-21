@@ -1,0 +1,58 @@
+.video-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.opac-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(34, 39, 41, 0.92);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-heading {
+  color: #fff;
+  position: relative;
+  z-index: 99;
+  font-size: 40px;
+}
+
+.hero-content-wrapper {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+}
+
+.hero-btn {
+  width: 170px;
+  height: 40px;
+  font-family: poppins;
+  background: #febf32;
+  font-size: 13px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.hero-content {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 16px;
+}
