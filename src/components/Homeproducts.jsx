@@ -1,18 +1,31 @@
 import React from "react";
-import Slider from "react-slick";
 import "../assets/styles/Homeproducts.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ohc2 from "../assets/images/ohc2.png";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import { prodData } from "../data/ProductData";
 
 const Homeproducts = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+  const handleDragStart = (e) => e.preventDefault();
+
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    1024: {
+      items: 4,
+      itemsFit: "contain",
+    },
   };
+
+  const items = prodData.map((elm) => {
+    return (
+      <div key={elm.id} className="product-card">
+        <img src={elm.img} alt="product" className="prod-carousel-img" />
+        <p>{elm.content}</p>
+      </div>
+    );
+  });
   return (
     <>
       <div className="container">
@@ -20,78 +33,12 @@ const Homeproducts = () => {
           <span className="heading">Our Products</span>
         </h2>
         <div className="homeproduct-carousel">
-          <Slider {...settings}>
-            <div className="product-card">
-              <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor</h4>
-              <div className="product-card-content">
-                <p className="prod-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus modi asperiores, possimus explicabo tempore
-                  culpa? Saepe sequi quasi facere, mollitia iste dolor in
-                  necessitatibus odio repellat unde nemo sint nam minus
-                  obcaecati magnam! Dolorum temporibus assumenda vel culpa?
-                  Illo, nulla!
-                </p>
-              </div>
-            </div>
-            <div className="product-card">
-              <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor</h4>
-              <div className="product-card-content">
-                <p className="prod-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus modi asperiores, possimus explicabo tempore
-                  culpa? Saepe sequi quasi facere, mollitia iste dolor in
-                  necessitatibus odio repellat unde nemo sint nam minus
-                  obcaecati magnam! Dolorum temporibus assumenda vel culpa?
-                  Illo, nulla!
-                </p>
-              </div>
-            </div>
-            <div className="product-card">
-              <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor</h4>
-              <div className="product-card-content">
-                <p className="prod-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus modi asperiores, possimus explicabo tempore
-                  culpa? Saepe sequi quasi facere, mollitia iste dolor in
-                  necessitatibus odio repellat unde nemo sint nam minus
-                  obcaecati magnam! Dolorum temporibus assumenda vel culpa?
-                  Illo, nulla!
-                </p>
-              </div>
-            </div>
-            <div className="product-card">
-              <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor</h4>
-              <div className="product-card-content">
-                <p className="prod-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus modi asperiores, possimus explicabo tempore
-                  culpa? Saepe sequi quasi facere, mollitia iste dolor in
-                  necessitatibus odio repellat unde nemo sint nam minus
-                  obcaecati magnam! Dolorum temporibus assumenda vel culpa?
-                  Illo, nulla!
-                </p>
-              </div>
-            </div>
-            <div className="product-card">
-              <img src={ohc2} alt="product" className="prod-img" />
-              <h4 className="prod-card-title">I Beam Coveyor...</h4>
-              <div className="product-card-content">
-                <p className="prod-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus modi asperiores, possimus explicabo tempore
-                  culpa? Saepe sequi quasi facere, mollitia iste dolor in
-                  necessitatibus odio repellat unde nemo sint nam minus
-                  obcaecati magnam! Dolorum temporibus assumenda vel culpa?
-                  Illo, nulla!
-                </p>
-              </div>
-            </div>
-          </Slider>
+          <AliceCarousel
+            mouseTracking
+            infinite={true}
+            responsive={responsive}
+            items={items}
+          />
         </div>
       </div>
     </>
