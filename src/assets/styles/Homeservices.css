@@ -52,7 +52,8 @@
     font-weight:600;
     margin:0px;
      color:#303535;
-     line-height:46px;
+     line-height:35px;
+     margin-bottom:10px;
 }
 /* line-height:17px; */
 .card p{
