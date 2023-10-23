@@ -7,27 +7,25 @@
   position: relative;
 }
 
-.product-card {
-  padding: 4px;
-}
-
-.prod-img {
+.prod-carousel-img {
   width: 100%;
 }
-
+/* .alice-carousel {
+  border: 1px solid red;
+} */
 .prod-card-title {
   font-weight: 600;
   margin: 12px 0;
 }
 
-.slick-slide > div {
+.product-card {
   margin: 0 10px;
 }
-.slick-list {
-  margin: 0 -10px;
+
+.product-card:nth-child(2) {
+  border: 2px solid red;
 }
 
-.prod-content {
-  font-size: 14px;
-  margin: 0;
+.alice-carousel__stage .alice-carousel__stage-item:first-child {
+  border: 4px solid blue;
 }
