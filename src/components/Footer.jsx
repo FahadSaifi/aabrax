@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/styles/Footer.css';
 import logo from "../assets/images/logo.png";
+import {Link} from "react-router-dom";
 import { FaEnvelope } from "react-icons/fa"; 
 
 const Footer = () => {
@@ -13,19 +14,19 @@ const Footer = () => {
       </div>
       <div className="footer-links">
         <h4>Links</h4>
-        <a href="/" className="nav-links">Home</a>
-        <a href="/About" className="nav-links">About</a>
-        <a href="/Solutions" className="nav-links">Solutions</a>
-        <a href="/Products" className="nav-links">Products</a>
-        <a href="/Contact" className="nav-links">Contact</a>
+        <Link to="/" className="nav-links">Home</Link>
+        <Link to="/About" className="nav-links">About</Link>
+        <Link to="/Solution" className="nav-links">Solutions</Link>
+        <Link to="/Product" className="nav-links">Products</Link>
+        <Link to="/Contact" className="nav-links">Contact</Link>
       </div>
       <div className="footer-products">
         <h4>Products</h4>
-        <a href="/p1" className="nav-links">I Beam Conveyor</a>
-        <a href="/p2" className="nav-links">4 Wheel Conveyor</a>
-        <a href="/p3" className="nav-links">Enclosed Track Conveyor</a>
-        <a href="/p4" className="nav-links">Garments Conveyor</a>
-        <a href="/p5" className="nav-links">Heavy Duty Conveyor</a>
+        <Link to="" className="nav-links">I Beam Conveyor</Link>
+        <Link to="" className="nav-links">4 Wheel Conveyor</Link>
+        <Link to="" className="nav-links">Enclosed Track Conveyor</Link>
+        <Link to="" className="nav-links">Garments Conveyor</Link>
+        <Link to="" className="nav-links">Heavy Duty Conveyor</Link>
       </div>
       <div className="footer-newsletter">
         <h4>Newsletter</h4>
