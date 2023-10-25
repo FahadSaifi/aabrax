@@ -3,7 +3,11 @@ import Hero from "../components/Hero";
 import Homeabout from "../components/Homeabout";
 import Homeproducts from "../components/Homeproducts";
 import Homeservices from "../components/Homeservices";
+
 import HomeContactus from "../components/HomeContactus";
+
+import Homewhychoose from "../components/Homewhychoose";
+
 
 const Home = () => {
   return (
@@ -11,8 +15,8 @@ const Home = () => {
       <Hero />
       <Homeabout />
       <Homeproducts />
-      <Homeservices/>
-      <HomeContactus/>
+      <Homeservices />
+      <HomeContactus />
     </>
   );
 };
