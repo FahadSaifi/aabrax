@@ -6,7 +6,7 @@ import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import NotFound from "./pages/NotFound";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<NotFound />}></Route>
           
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );
