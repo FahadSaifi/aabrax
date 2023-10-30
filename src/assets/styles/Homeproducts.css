@@ -3,16 +3,14 @@
   font-weight: 600;
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
 }
 
 .prod-carousel-img {
   width: 100%;
 }
-/* .alice-carousel {
-  border: 1px solid red;
-} */
+
 .prod-card-title {
   font-weight: 600;
   margin: 12px 0;
@@ -28,4 +26,24 @@
 
 .alice-carousel__stage .alice-carousel__stage-item:first-child {
   border: 4px solid blue;
+}
+
+.homeproduct-carousel .alice-carousel__dots {
+  display: none;
+}
+
+.alice-carousel__prev-btn [data-area]::after,
+.alice-carousel__next-btn [data-area]::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  margin-top: 30px;
 }

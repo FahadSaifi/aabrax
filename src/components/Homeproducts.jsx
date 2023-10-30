@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/styles/Homeproducts.css";
-import ohc2 from "../assets/images/ohc2.png";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { prodData } from "../data/ProductData";
