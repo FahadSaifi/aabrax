@@ -12,7 +12,11 @@ const Hero = () => {
           <h1 className="hero-heading">
             Have over 25 years of experience <br /> with excellent reviews.
           </h1>
-          <p className="hero-content">Let's get started</p>
+          <p className="hero-content">
+            Streamline your operations and improve efficiency with our
+            <br />
+            high-quality conveyor systems.
+          </p>
           <button className="hero-btn">Learn more</button>
         </div>
       </div>

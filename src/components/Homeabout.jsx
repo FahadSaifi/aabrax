@@ -16,13 +16,14 @@ const Homeabout = () => {
               </h2>
             </div>
             <p className="home-about-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              molestiae praesentium vel nesciunt quos laudantium, iusto eaque
-              reprehenderit quibusdam veniam alias, perspiciatis vero quaerat
-              aperiam adipisci ducimus hic! Odio itaque non eos! Rerum sequi
-              voluptatum debitis nam dignissimos.
+              At Aabrax Conveyors, we are dedicated to providing innovative and
+              reliable conveyor solutions for a wide range of industries. With
+              our expertise in material handling and proven track record of
+              delivering exceptional conveyor systems, we are committed to
+              simplifying your material handling process and improving your
+              operational efficiency.
             </p>
-            <button className="hero-about-btn"> Button</button>
+            <button className="hero-about-btn">Learn more</button>
           </div>
           <div className="home-about-right-col">
             <img src={homeabout} alt="about us" className="home-about-img" />
