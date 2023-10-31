@@ -1,39 +1,70 @@
 .contact-container{
-    width:100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .homecontact-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-block: 2rem 4rem;
 }
-form{
-    width: 100%;
+.homecontact-body>tr>td{
+    padding-inline: 1.8rem;
+    vertical-align: top;
 }
-form label, form input, form textarea{
+.contact-form{
+    width: 70%;
+}
+.contact-info{
+    color:white;
+    background-color: #febf32;
+    width: 30%;
+}
+.homecontact-body>tr>td>h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+/* contact info start */
+.contact-info>p{
+    margin-bottom: 0;
+}
+.icons{
+    padding:6px;
+    font-size: 1.3rem;
+    border:1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.contact-links{
+    border-spacing: 0px 20px;
+}
+.contact-links>tr>td{
+    vertical-align: top;
+}
+.contact-links>tr>td>b{
+    font-weight: 600;
+}
+/* contact info ends */
+
+/* contact form start */
+
+form input, form textarea{
     display: block;
     width: 100%;
-}
-form label{
-    margin-bottom: 10px;
-}
-form input, form textarea{
+    font-family: inherit;
     margin-bottom: 20px;
-    padding:8px 15px;
+    padding-block: 6px;
     border:none;
     border-bottom:2px solid #ddd;
     outline:none !important;
 }
+form label{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+} 
+
 form input[type=submit] {
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
-    box-sizing: content-box;
+    width: 170px;
     height: 40px;
     font-family: poppins;
     background: #febf32;
@@ -45,9 +76,12 @@ form input[type=submit] {
     color: #fff;
     margin-top: 40px;
 }
-.contact-form, .contact-img{
-    flex-basis: 40%;
+
+form .name-email{
+    display: flex;
+    justify-content: space-between;
 }
-.contact-img img{
-    width: 100%;
+form .name,form .email{
+    width: 45%;
 }
+/* contact form ends */
