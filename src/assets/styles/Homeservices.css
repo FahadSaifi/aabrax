@@ -60,3 +60,8 @@
 .card:hover {
   transform: scale(1.06);
 }
+
+.whychooseimg {
+  width: 70px;
+  margin-bottom: 12px;
+}

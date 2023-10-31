@@ -6,7 +6,7 @@ import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import NotFound from "./pages/NotFound";
-import Homecontact from "./components/Homecontact";
+// import Homecontact from "./components/Homecontact";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -20,9 +20,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="*" element={<NotFound />}></Route>
-          
         </Routes>
-        <Homecontact/>
         <Footer />
       </BrowserRouter>
     </>
