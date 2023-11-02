@@ -3,9 +3,12 @@ import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/Navbar.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -22,17 +25,21 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-links submenu-parent">
-                <NavLink to="/product" className="nav-route">
+                <NavLink
+                  to="/product"
+                  className="nav-route"
+                  onClick={() => navigate("/product/beam")}
+                >
                   Products
                 </NavLink>
                 <ul className="submenu-wrapper">
                   <li className="dropdown-wrapper">
-                    <NavLink to="" className="submenu-link">
+                    <NavLink to="/products/ibeam" className="submenu-link">
                       I Beam Conveyor
                     </NavLink>
                   </li>
                   <li className="dropdown-wrapper second">
-                    <NavLink to="" className="submenu-link">
+                    <NavLink to="/products/wheel" className="submenu-link">
                       4 Wheel Conveyor
                     </NavLink>
                   </li>

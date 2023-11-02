@@ -6,7 +6,6 @@ import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import NotFound from "./pages/NotFound";
-// import Homecontact from "./components/Homecontact";
 import Footer from "./components/Footer";
 function App() {
   return (
