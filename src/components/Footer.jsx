@@ -7,13 +7,8 @@ import { FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-about">
-        <img src={logo} alt="logo" className="logo" />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, perspiciatis.</p>
-        <p>&copy; Copyright</p>
-      </div>
       <div className="footer-links">
-        <h4>Links</h4>
+        <h4>Quick Links</h4>
         <Link to="/" className="nav-links">Home</Link>
         <Link to="/About" className="nav-links">About</Link>
         <Link to="/Solution" className="nav-links">Solutions</Link>
@@ -28,12 +23,20 @@ const Footer = () => {
         <Link to="" className="nav-links">Garments Conveyor</Link>
         <Link to="" className="nav-links">Heavy Duty Conveyor</Link>
       </div>
+      <div className="footer-solutions">
+        <h4>Solutions</h4>
+        <Link to="" className="nav-links">Hello World</Link>
+        <Link to="" className="nav-links">Hello World</Link>
+        <Link to="" className="nav-links">Hello World</Link>
+        <Link to="" className="nav-links">Hello World</Link>
+        <Link to="" className="nav-links">Hello World</Link>
+      </div>
       <div className="footer-newsletter">
-        <h4>Newsletter</h4>
+        <h2>Aabrax</h2>
         <p>Subscribe for latest updates</p>
         <form className="newsletter-form">
           <input type="email" name="email" id="email" placeholder="Enter Your Email" />
-          <button><FaEnvelope /></button>
+          <button>Subscribe</button>
         </form>
       </div>
     </div>
