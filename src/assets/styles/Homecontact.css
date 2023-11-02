@@ -48,7 +48,7 @@
 
 /* contact form start */
 
-form input, form textarea{
+.contact-container form input,.contact-container form textarea{
     display: block;
     width: 100%;
     font-family: inherit;
@@ -58,12 +58,12 @@ form input, form textarea{
     border-bottom:2px solid #ddd;
     outline:none !important;
 }
-form label{
+.contact-container form label{
     margin-bottom: 10px;
     text-transform: uppercase;
 } 
 
-form input[type=submit] {
+.contact-container form input[type=submit] {
     width: 170px;
     height: 40px;
     font-family: poppins;
@@ -77,11 +77,11 @@ form input[type=submit] {
     margin-top: 40px;
 }
 
-form .name-email{
+.contact-container form .name-email{
     display: flex;
     justify-content: space-between;
 }
-form .name,form .email{
+.contact-container form .name,.contact-container form .email{
     width: 45%;
 }
 /* contact form ends */

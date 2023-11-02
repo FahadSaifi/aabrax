@@ -1,4 +1,3 @@
-/* resets */
 .footer a{
     color:#d3d3d3;
     text-decoration: none;
@@ -16,27 +15,37 @@
 }
 .footer .nav-links{
     justify-content: start;
+    margin-block:10px;
+}
+.footer-newsletter p{
+    margin-top: 40px;
+}
+.newsletter-form{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 40px;
 }
 .newsletter-form input, .newsletter-form button{
-    background-color: #fff;
-    padding-inline:15px;
-    border:1px solid #d3d3d3;
+    font-size: 15px;
+    padding:8px 15px;
+    border:none;
 }
 .newsletter-form input{
     border-radius: 4px 0 0 4px;
-    padding-block: 8px;
+    color:#333;
+    background-color: #222;
+    outline: none !important;
 }
 .newsletter-form button{
-    border-radius: 0 4px 4px 0 ;
-    padding-block: 5px 8px;
-    font-size: 15px;
+    border-radius: 4px ;
+    transform: translateX(-10%);
     cursor: pointer;
+    color: #222;
+    background-color: #fff;
 }
 .footer>div{
     height: inherit;
     padding-inline:20px;
     width:20%;
-}
-.footer-links,.footer-products,.footer-newsletter{
-    border-left: 2px solid rgb(104, 104, 104);
 }
