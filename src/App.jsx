@@ -6,7 +6,6 @@ import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import NotFound from "./pages/NotFound";
-// import Homecontact from "./components/Homecontact";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/product" element={<Product />}></Route>
+          <Route path="/product/:id" element={<Product />}></Route>
           <Route path="/solution" element={<Solutions />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
