@@ -1,51 +1,51 @@
-.footer a{
-    color:#d3d3d3;
-    text-decoration: none;
+.footer a {
+  color: #d3d3d3;
+  text-decoration: none;
 }
-
-.footer{
-    min-height: 100px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-    flex-direction: row;
-    color:#d3d3d3;
-    padding-block: 2rem;
+.footer {
+  min-height: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: row;
+  color: #d3d3d3;
+  padding-block: 2rem;
 }
-.footer .nav-links{
-    justify-content: start;
-    margin-block:10px;
+.footer .nav-links {
+  justify-content: start;
+  margin-block: 10px;
 }
-.footer-newsletter p{
-    margin-top: 40px;
+.footer-newsletter p {
+  margin-top: 40px;
 }
-.newsletter-form{
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    height: 40px;
+.newsletter-form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 40px;
 }
-.newsletter-form input, .newsletter-form button{
-    font-size: 15px;
-    padding:8px 15px;
-    border:none;
+.newsletter-form input,
+.newsletter-form button {
+  font-size: 15px;
+  padding: 8px 15px;
+  border: none;
 }
-.newsletter-form input{
-    border-radius: 4px 0 0 4px;
-    color:#333;
-    background-color: #222;
-    outline: none !important;
+.newsletter-form input {
+  border-radius: 4px 0 0 4px;
+  color: #333;
+  background-color: #222;
+  outline: none !important;
 }
-.newsletter-form button{
-    border-radius: 4px ;
-    transform: translateX(-10%);
-    cursor: pointer;
-    color: #222;
-    background-color: #fff;
+.newsletter-form button {
+  border-radius: 4px;
+  transform: translateX(-10%);
+  cursor: pointer;
+  color: #222;
+  background-color: #fff;
 }
-.footer>div{
-    height: inherit;
-    padding-inline:20px;
-    width:20%;
+.footer > div {
+  height: inherit;
+  padding-inline: 20px;
+  width: 20%;
 }

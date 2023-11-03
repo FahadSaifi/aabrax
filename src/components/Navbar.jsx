@@ -34,27 +34,27 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="submenu-wrapper">
                   <li className="dropdown-wrapper">
-                    <NavLink to="/products/ibeam" className="submenu-link">
+                    <NavLink to="/product/1" className="submenu-link">
                       I Beam Conveyor
                     </NavLink>
                   </li>
                   <li className="dropdown-wrapper second">
-                    <NavLink to="/products/wheel" className="submenu-link">
+                    <NavLink to="/product/2" className="submenu-link">
                       4 Wheel Conveyor
                     </NavLink>
                   </li>
                   <li className="dropdown-wrapper">
-                    <NavLink to="" className="submenu-link">
+                    <NavLink to="/product/3" className="submenu-link">
                       Enclosed Track Conveyor
                     </NavLink>
                   </li>
                   <li className="dropdown-wrapper">
-                    <NavLink to="" className="submenu-link">
+                    <NavLink to="/product/4" className="submenu-link">
                       Garments Conveyor
                     </NavLink>
                   </li>
                   <li className="dropdown-wrapper">
-                    <NavLink to="" className="submenu-link">
+                    <NavLink to="/product/5" className="submenu-link">
                       Heavy Duty Conveyor
                     </NavLink>
                   </li>
