@@ -31,26 +31,30 @@ const Product = () => {
             <div className="prod-content">
               <div className="prod-desc">
                 <div className="prod-desc-left">
-                  <img src={ohc2} alt="prod" className="prod-desc-img" />
+                  <img
+                    src={elm.secondImg}
+                    alt="prod"
+                    className="prod-desc-img"
+                  />
                 </div>
                 <div className="prod-desc-right">
                   <h2 className="prod-info-title">{elm.secondTitle}</h2>
                   <p className="prod-info">{elm.desc}</p>
                 </div>
               </div>
-              <h2 className="prod-features">Features of I - Beam Conveyor</h2>
+              <h2 className="prod-features">Features of {elm.secondTitle}</h2>
               <ul className="prod-list">
                 {elm.features.map((item) => {
                   return <li>{item}</li>;
                 })}
               </ul>
-              <h2 className="prod-features">Advantages of I - Beam Conveyor</h2>
+              <h2 className="prod-features">Advantages of {elm.secondTitle}</h2>
               <ul className="prod-list">
                 {elm.advantages.map((item) => {
                   return <li>{item}</li>;
                 })}
               </ul>
-              <h2 className="applications">I - Beam Conveyor Applications</h2>
+              <h2 className="applications">{elm.secondTitle} Applications</h2>
               <ul className="prod-list">
                 {elm.applications.map((item) => {
                   return <li>{item}</li>;
