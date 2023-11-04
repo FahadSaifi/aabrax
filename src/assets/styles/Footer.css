@@ -2,11 +2,13 @@
   color: #d3d3d3;
   text-decoration: none;
 }
+.footer-wrapper {
+  background-color: #333;
+}
 .footer {
   min-height: 100px;
-  background-color: #333;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: start;
   flex-direction: row;
   color: #d3d3d3;
@@ -46,6 +48,6 @@
 }
 .footer > div {
   height: inherit;
-  padding-inline: 20px;
+  padding-inline: 0px;
   width: 20%;
 }
