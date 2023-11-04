@@ -1,5 +1,4 @@
 import React from "react";
-import ohc2 from "../assets/images/ohc2.png";
 import { prodData } from "../data/ProdData";
 import { useParams } from "react-router-dom";
 import "../assets/styles/Products.css";

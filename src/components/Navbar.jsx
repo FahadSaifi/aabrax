@@ -25,11 +25,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-links submenu-parent">
-                <NavLink
-                  to="/product"
-                  className="nav-route"
-                  onClick={() => navigate("/product/beam")}
-                >
+                <NavLink to="/product/1" className="nav-route">
                   Products
                 </NavLink>
                 <ul className="submenu-wrapper">

@@ -1,11 +1,15 @@
-import ibeam from "../assets/images/ibeam.jpg";
-import ohc2 from "../assets/images/ohc2.png";
+import ibeam from "../assets/images/products/ibeam.jpg";
+import ohc2 from "../assets/images/products/ohc2.png";
 import wheelbanner from "../assets/images/4wheelbanner.jpg";
 import wheelbanner2 from "../assets/images/4wheel.jpg";
 import gcbanner from "../assets/images/gbanner.jpg";
 import gc from "../assets/images/gc.jpg";
 import fc from "../assets/images/fc.png";
 import fcb from "../assets/images/fcb.jpg";
+import ecb from "../assets/images/products/ecb.png";
+import ec from "../assets/images/products/ec.jpg";
+import hdb from "../assets/images/products/hdb.jpg";
+import hb from "../assets/images/products/hd.png";
 
 export const prodData = [
     {
@@ -32,10 +36,10 @@ export const prodData = [
         applications: ["Four-wheel conveyors are extensively used in warehouses and distribution centers to transport goods between different areas, such as loading docks, storage locations, and order fulfillment zones. They facilitate the smooth and timely movement of products, optimizing the overall logistics and supply chain operations.","Four-wheel conveyors are commonly employed in the automotive industry for the efficient handling of automotive components and parts during the assembly and production of vehicles. They help streamline the movement of parts along the production line, contributing to increased efficiency and productivity in automobile manufacturing plants."," In the food and beverage industry, four-wheel conveyors are used to transport food products, packaging materials, and ingredients between different stages of the production process. They are designed to meet specific hygiene standards and regulations, ensuring the safe and contamination-free handling of food items."]
     },{
         id: 3,
-        mainImg: wheelbanner,
+        mainImg: ecb,
         title: "Enclosed Track Conveyor",
         tagline: "Elevating Efficiency with Enclosed Track Conveyors",
-        secondImg: wheelbanner2,
+        secondImg: ec,
         secondTitle: "Enclosed Track Conveyor",
         desc: "The clients who all want a conveyor belt at a height for transporting the heavy materials can get an enclosed track conveyor belt. These systems are highly compact, and it can handle medium weight efficiently as well. It is a good flexible belt to install in a small space. If you want to move heavy things easily from one place and want a small space installation machine, then it is best for you all to go with the enclosed track chain conveyor.",
         features: ["It comes with high design flexibility","it has got design options","You can get going with all modular construction","You can get improved work environments"],
@@ -54,10 +58,10 @@ export const prodData = [
         applications: ["Manufacturing and production","Sorting and distribution centers","E-commerce fulfillment centers","Retail stores and warehouses"]
     },{
         id: 5,
-        mainImg: wheelbanner,
+        mainImg: hdb,
         title: "Heavy Duty Conveyor",
         tagline: "Heavy-Duty Conveyors for Robust Operations",
-        secondImg: wheelbanner2,
+        secondImg: hb,
         secondTitle: "Heavy Duty Conveyor",
         desc: "Heavy-duty conveyors are typically used in industrial settings for moving bulky or heavy items. They can also be used in commercial and retail settings for transporting goods from one area to another. Here are some specific applications for heavy-duty conveyors Warehousing and Distribution Centers: Conveyors are often used in warehouses and distribution centers to move products from one point to another. Heavy-duty conveyors can handle large, bulky items with ease ensuring that products arrive at their destination safely and on time. Manufacturing Settings: Conveyors can be used in a variety of manufacturing applications, such as moving materials down an assembly line or transporting parts and components from one station to another. Heavy-duty conveyors can stand up.",
         features: ["Heavy-duty construction","High capacity","Robust design","Flexible configuration"],
