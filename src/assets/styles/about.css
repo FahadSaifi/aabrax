@@ -1,0 +1,74 @@
+/* utility */
+.section{
+    margin-block:2rem;
+    padding-block: 2rem;
+}
+.full-bg{
+    background-color: #eee;
+}
+
+/* about hero */
+.about-hero{
+    height: 60vh;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(../images/about-bg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.about-hero h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    font-family: poppins;
+    background: #febf32;
+    font-size: 14px;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* founder */
+.founder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.founder-photo{
+    width:40%;
+}
+.founder-details{
+    width: 60%;
+}
+.founder-heading {
+    text-align: left !important;
+    width: fit-content !important;
+}
+.founder-heading-line::after{
+    width:50% !important;
+}
+.founder-photo img{
+    border-radius: 10px;
+    width:100%;
+}
+
+/* our vision */
+.our-vision{
+    margin-block:0;
+}
