@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/Footer.css";
+import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -7,8 +8,10 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="container">
         <div className="footer">
+          <div className="footer-logo">
+            <img src={logo} alt="logo" className="brand-logo" />
+          </div>
           <div className="footer-links">
-            <h4>Quick Links</h4>
             <Link to="/" className="nav-links">
               Home
             </Link>
@@ -25,55 +28,9 @@ const Footer = () => {
               Contact
             </Link>
           </div>
-          <div className="footer-products">
-            <h4>Products</h4>
-            <Link to="" className="nav-links">
-              I Beam Conveyor
-            </Link>
-            <Link to="" className="nav-links">
-              4 Wheel Conveyor
-            </Link>
-            <Link to="" className="nav-links">
-              Enclosed Track Conveyor
-            </Link>
-            <Link to="" className="nav-links">
-              Garments Conveyor
-            </Link>
-            <Link to="" className="nav-links">
-              Heavy Duty Conveyor
-            </Link>
-          </div>
-          <div className="footer-solutions">
-            <h4>Solutions</h4>
-            <Link to="" className="nav-links">
-              Hello World
-            </Link>
-            <Link to="" className="nav-links">
-              Hello World
-            </Link>
-            <Link to="" className="nav-links">
-              Hello World
-            </Link>
-            <Link to="" className="nav-links">
-              Hello World
-            </Link>
-            <Link to="" className="nav-links">
-              Hello World
-            </Link>
-          </div>
-          <div className="footer-newsletter">
-            <h2>Aabrax</h2>
-            <p>Subscribe for latest updates</p>
-            <form className="newsletter-form">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Your Email"
-              />
-              <button>Subscribe</button>
-            </form>
-          </div>
+        </div>
+        <div className="copyright">
+          <p>Copyright &copy; 2023. All rights reserved</p>
         </div>
       </div>
     </div>
