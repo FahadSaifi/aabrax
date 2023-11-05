@@ -1,53 +1,34 @@
-.footer a {
-  color: #d3d3d3;
-  text-decoration: none;
-}
 .footer-wrapper {
   background-color: #333;
 }
 .footer {
-  min-height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   flex-direction: row;
   color: #d3d3d3;
-  padding-block: 2rem;
+  padding-top: 2rem;
+}
+.footer-logo .brand-logo{
+  width: 100px;
+  display: block;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer .nav-links {
-  justify-content: start;
   margin-block: 10px;
+  color: #d3d3d3;
+  text-decoration: none;
 }
-.footer-newsletter p {
-  margin-top: 40px;
+.footer-links{
+  width: 40%;
 }
-.newsletter-form {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  height: 40px;
-}
-.newsletter-form input,
-.newsletter-form button {
-  font-size: 15px;
-  padding: 8px 15px;
-  border: none;
-}
-.newsletter-form input {
-  border-radius: 4px 0 0 4px;
-  color: #333;
-  background-color: #222;
-  outline: none !important;
-}
-.newsletter-form button {
-  border-radius: 4px;
-  transform: translateX(-10%);
-  cursor: pointer;
-  color: #222;
-  background-color: #fff;
-}
-.footer > div {
-  height: inherit;
-  padding-inline: 0px;
-  width: 20%;
+.copyright{
+  color: #d3d3d3;
+  padding-bottom: 2rem;
+  text-align: left;
 }
