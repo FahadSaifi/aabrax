@@ -25,11 +25,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-links submenu-parent">
-                <NavLink
-                  to="/product"
-                  className="nav-route"
-                  onClick={() => navigate("/product/beam")}
-                >
+                <NavLink to="/product/1" className="nav-route">
                   Products
                 </NavLink>
                 <ul className="submenu-wrapper">
@@ -71,77 +67,77 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-2">
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/1" className="nav-item-link">
                       Automotive Conveyor Systems
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/2" className="nav-item-link">
                       Assembly Line
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/3" className="nav-item-link">
                       Cleaning and Pretreatment
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/4" className="nav-item-link">
                       Dip Lines
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/5" className="nav-item-link">
                       E-Coating and Plating
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/6" className="nav-item-link">
                       Entertainment Industry
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/7" className="nav-item-link">
                       Fan Stator Varnish Conveyor
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/8" className="nav-item-link">
                       Fan Testing Conveyor
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/9" className="nav-item-link">
                       Finishing Doors and Windows
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/10" className="nav-item-link">
                       Garment Handling Systems
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/11" className="nav-item-link">
                       Paint Shop
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/12" className="nav-item-link">
                       Powder Coating Sub
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/13" className="nav-item-link">
                       Tank and Cylinder Finishing
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/14" className="nav-item-link">
                       Wet Spray Painting
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="" className="nav-item-link">
+                    <NavLink to="/solution/15" className="nav-item-link">
                       Woodworking Operations
                     </NavLink>
                   </li>
