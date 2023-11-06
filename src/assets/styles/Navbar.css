@@ -164,18 +164,22 @@
   position: absolute;
   top: 30px;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.dropdown-2::-webkit-scrollbar {
-  display: none;
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.dropdown-2 {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 
 .nav-item {
