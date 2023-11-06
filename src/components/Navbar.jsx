@@ -62,7 +62,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-links dropdown-2-wrapper">
-                <NavLink to="/solution" className="nav-route ">
+                <NavLink to="/solution/1" className="nav-route ">
                   Solutions
                 </NavLink>
                 <ul className="dropdown-2">
@@ -93,7 +93,7 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink to="/solution/6" className="nav-item-link">
-                      Entertainment Industry
+                      Cold Casting Conveyor
                     </NavLink>
                   </li>
                   <li className="nav-item">
