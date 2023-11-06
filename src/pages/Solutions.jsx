@@ -46,6 +46,14 @@ const Product = () => {
                 {elm.features.map((item) => {
                   return <li key={elm.id}>{item}</li>;
                 })}
+              </ul>{" "}
+              <h2 className="prod-features">
+                Technical Data about our {elm.secondTitle}
+              </h2>
+              <ul className="prod-list">
+                {elm.technicalData.map((item) => {
+                  return <li key={elm.id}>{item}</li>;
+                })}
               </ul>
             </div>
           </div>

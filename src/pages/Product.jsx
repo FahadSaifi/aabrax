@@ -41,21 +41,19 @@ const Product = () => {
                   <p className="prod-info">{elm.desc}</p>
                 </div>
               </div>
-              <h2 className="prod-features">Features of {elm.secondTitle}</h2>
+              <h2 className="prod-features">
+                Features of our {elm.secondTitle}
+              </h2>
               <ul className="prod-list">
                 {elm.features.map((item) => {
                   return <li>{item}</li>;
                 })}
               </ul>
-              <h2 className="prod-features">Advantages of {elm.secondTitle}</h2>
+              <h2 className="prod-features">
+                Technical Data about Our {elm.secondTitle}
+              </h2>
               <ul className="prod-list">
-                {elm.advantages.map((item) => {
-                  return <li>{item}</li>;
-                })}
-              </ul>
-              <h2 className="applications">{elm.secondTitle} Applications</h2>
-              <ul className="prod-list">
-                {elm.applications.map((item) => {
+                {elm.technicalData.map((item) => {
                   return <li>{item}</li>;
                 })}
               </ul>
