@@ -1,6 +1,7 @@
 import React from "react";
 import { prodData } from "../data/ProdData";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import "../assets/styles/Products.css";
 
 const Product = () => {
@@ -9,6 +10,10 @@ const Product = () => {
   const filtData = prodData.filter((elm) => {
     return elm.id == id;
   });
+
+  useEffect(()=>{
+    document.title = "Aabrax | Products"
+  },[])
 
   return (
     <>

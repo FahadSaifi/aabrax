@@ -2,6 +2,7 @@ import React from "react";
 import { solData } from "../data/SolutionData";
 import { useParams } from "react-router-dom";
 import "../assets/styles/Products.css";
+import { useEffect } from "react";
 
 const Product = () => {
   const { id } = useParams();
@@ -9,6 +10,10 @@ const Product = () => {
   const filtData = solData.filter((elm) => {
     return elm.id == id;
   });
+
+  useEffect(()=>{
+    document.title = "Aabrax | Solutions"
+  },[])
 
   return (
     <>
