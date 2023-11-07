@@ -17,7 +17,7 @@ const Hero = () => {
             <br />
             high-quality conveyor systems.
           </p>
-          <button className="hero-btn">Learn more</button>
+          <button className="hero-btn">Read more</button>
         </div>
       </div>
     </>

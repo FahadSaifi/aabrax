@@ -23,7 +23,7 @@ const Homeabout = () => {
               simplifying your material handling process and improving your
               operational efficiency.
             </p>
-            <button className="hero-about-btn">Learn more</button>
+            <button className="hero-about-btn">Read more</button>
           </div>
           <div className="home-about-right-col">
             <img src={homeabout} alt="about us" className="home-about-img" />

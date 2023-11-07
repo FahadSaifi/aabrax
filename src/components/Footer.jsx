@@ -18,11 +18,11 @@ const Footer = () => {
             <Link to="/About" className="nav-links">
               About
             </Link>
-            <Link to="/Solution" className="nav-links">
-              Solutions
-            </Link>
-            <Link to="/Product" className="nav-links">
+            <Link to="/product/1" className="nav-links">
               Products
+            </Link>
+            <Link to="/solution/1" className="nav-links">
+              Solutions
             </Link>
             <Link to="/Contact" className="nav-links">
               Contact
