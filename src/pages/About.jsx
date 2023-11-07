@@ -2,8 +2,12 @@ import React from "react";
 import "../assets/styles/about.css";
 import { Link } from "react-router-dom";
 import founder from "../assets/images/founder.jpg";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(()=>{
+    document.title = "Aabrax | About Us"
+  },[])
   return (
     <>
       <div className="about-hero">

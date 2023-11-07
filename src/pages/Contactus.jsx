@@ -1,8 +1,12 @@
 import React from "react";
 import '../assets/styles/Contactus.css';
 import contactImg from "../assets/images/contact.jpg";
+import { useEffect } from "react";
 
 const Contactus = () => {
+  useEffect(()=>{
+    document.title = "Aabrax | Contact Us"
+  },[])
   return (
     <>
     <div className="container">
