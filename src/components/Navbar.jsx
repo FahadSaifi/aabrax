@@ -156,7 +156,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a href="tel:+91 9718252939">
+          <a href="tel:+91 9999999">
             <button className="tel-btn">Call us now!</button>
           </a>
         </div>

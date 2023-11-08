@@ -41,7 +41,7 @@ const Carousel = () => {
                   className="product-card-btn"
                   onClick={() => navigate(elm.navigate)}
                 >
-                  Learn More
+                  Read More
                 </button>
               </div>
             );

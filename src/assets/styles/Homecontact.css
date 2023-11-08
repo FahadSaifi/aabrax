@@ -76,6 +76,7 @@
     border-radius: 3px;
     color: #fff;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .contact-container form .name-email{
