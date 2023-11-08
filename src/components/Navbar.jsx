@@ -1,4 +1,3 @@
-import { FiPhoneCall } from "react-icons/fi";
 import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/Navbar.css";
@@ -15,7 +14,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-wrapper">
           <div className="img-wrapper">
-            <img src={logo} alt="logo" className="logo" />
+            <NavLink to="/" className="nav-route">
+              <img src={logo} alt="logo" className="logo" />
+            </NavLink>
           </div>
           <div className="layout">
             <ul className="navlinks-wrapper">
@@ -155,7 +156,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <button className="tel-btn">Call us now!</button>
+          <a href="tel:+91 9718252939">
+            <button className="tel-btn">Call us now!</button>
+          </a>
         </div>
       </nav>
     </>
