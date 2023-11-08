@@ -1,8 +1,10 @@
 import React from "react";
 import v1 from "../assets/videos/v1.webm";
 import "../assets/styles/Homehero.css";
+import { useNavigate } from "react-router";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="video-wrapper">
@@ -17,7 +19,7 @@ const Hero = () => {
             <br />
             high-quality conveyor systems.
           </p>
-          <button className="hero-btn">Read more</button>
+          <button className="hero-btn" onClick={()=>navigate('/product/1')}>Read more</button>
         </div>
       </div>
     </>

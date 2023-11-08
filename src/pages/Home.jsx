@@ -5,6 +5,7 @@ import ProductsCarousel from "../components/ProductsCarousel";
 import Homeservices from "../components/Homeservices";
 import Homecontact from "../components/Homecontact";
 import { useEffect } from "react";
+import ClientsSlider from "../components/ClientsSlider";
 
 const Home = () => {
   useEffect(()=>{
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <ClientsSlider/>
       <Homeabout />
       <ProductsCarousel />
       <Homeservices />
