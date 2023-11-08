@@ -1,0 +1,14 @@
+.client-logo-img{
+    width: 100%;
+}
+.clients-logo-slider-wrapper{
+    margin-top: 60px;
+}
+
+.clients-logo-slider-wrapper .slick-list{
+    margin: 0 -20px;
+}
+
+.clients-logo-slider-wrapper .slick-slide > div{
+    padding: 0 20px;
+}
