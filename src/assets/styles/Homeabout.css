@@ -56,3 +56,62 @@
   margin-top: 26px;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .home-about-second-heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .home-about-description {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .hero-about-btn {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-about-second-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .home-about-description {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  .hero-about-btn {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .home-about-wrapper {
+    flex-direction: column;
+  }
+  .home-about-left-col,
+  .home-about-right-col {
+    width: unset;
+  }
+  .home-about-img {
+    margin-top: 50px;
+  }
+  .home-about-second-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .home-about-description {
+    font-size: 13.5px;
+    margin-top: 20px;
+  }
+  .hero-about-btn {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  
+}

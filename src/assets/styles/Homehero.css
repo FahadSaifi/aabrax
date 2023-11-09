@@ -50,3 +50,49 @@
   color: #fff;
   line-height: 24px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .hero-heading {
+    font-size: 35px;
+  }
+  .hero-btn {
+    width: 150px;
+    height: 40px;
+  }
+  
+  .hero-content {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-heading {
+    font-size: 33px;
+  }
+  .hero-btn {
+    width: 150px;
+    height: 40px;
+  }
+  
+  .hero-content {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hero-heading {
+    font-size: 30px;
+  }
+  .hero-btn {
+    width: 140px;
+    height: 37px;
+  }
+  
+  .hero-content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+}
