@@ -2,14 +2,16 @@ import React from "react";
 import "../assets/styles/Footer.css";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="footer-wrapper">
       <div className="container">
         <div className="footer">
           <div className="footer-logo">
-            <img src={logo} alt="logo" className="brand-logo" />
+            <img src={logo} alt="logo" className="brand-logo" onClick={()=>navigate('/')}/>
           </div>
           <div className="footer-links">
             <Link to="/" className="nav-links">

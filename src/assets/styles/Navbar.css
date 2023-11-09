@@ -214,3 +214,53 @@ a{
   color: #fff;
   border-radius: 6px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .logo {
+    width: 90px;
+  }
+  .nav-route {
+    font-size: 15px;
+  }
+  .tel-btn {
+    width: 120px;
+    height: 36px;
+    font-size: 13.5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 75px;
+  }
+  .nav-route {
+    font-size: 13.5px;
+  }
+  .tel-btn {
+    width: 100px;
+    height: 33px;
+    font-size: 12.5px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .logo {
+    width: 70px;
+  }
+  .nav-route {
+    font-size: 13.5px;
+  }
+  .navlinks-wrapper {
+    gap: 25px;
+  }
+  
+  .tel-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 10.5px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  
+}

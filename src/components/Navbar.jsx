@@ -5,8 +5,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
-
   const navigate = useNavigate();
 
   return (

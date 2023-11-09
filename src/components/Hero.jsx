@@ -8,7 +8,6 @@ const Hero = () => {
   return (
     <>
       <div className="video-wrapper">
-        <video src={v1} autoPlay loop muted className="hero-video"></video>
         <div className="opac-layer"></div>
         <div className="hero-content-wrapper">
           <h1 className="hero-heading">

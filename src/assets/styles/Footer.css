@@ -12,6 +12,7 @@
 .footer-logo .brand-logo{
   width: 100px;
   display: block;
+  cursor: pointer;
 }
 .footer-links{
   display: flex;
