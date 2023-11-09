@@ -12,10 +12,10 @@ const ClientsSlider = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 500,
+        speed: 800,
         cssEase: "ease",
         arrows: false,
-        autoplaySpeed: 1000
+        autoplaySpeed: 2000
       };
   return (
     <div className="container">
