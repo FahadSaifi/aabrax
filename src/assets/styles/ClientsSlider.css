@@ -2,13 +2,13 @@
     width: 100%;
 }
 .clients-logo-slider-wrapper{
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .clients-logo-slider-wrapper .slick-list{
-    margin: 0 -20px;
+    margin: 0 -50px;
 }
 
 .clients-logo-slider-wrapper .slick-slide > div{
-    padding: 0 20px;
+    padding: 0 50px;
 }

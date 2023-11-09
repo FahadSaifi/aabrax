@@ -7,7 +7,7 @@ const Homecontact = () => {
   return (
     <>
       <div className="contact-container container">
-        <h2 className="home-heading">
+        <h2 className="home-heading contact">
           <span className="heading">Contact Us</span>
         </h2>
         <table className="homecontact-body">

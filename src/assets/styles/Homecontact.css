@@ -85,4 +85,8 @@
 .contact-container form .name,.contact-container form .email{
     width: 45%;
 }
+
+.home-heading.contact{
+    margin-top: 80px;
+}
 /* contact form ends */
