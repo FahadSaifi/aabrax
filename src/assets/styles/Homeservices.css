@@ -1,6 +1,6 @@
 .homeservices {
   margin-top: 30px;
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
   display: flex;
   text-align: center;
@@ -31,12 +31,13 @@
   width: 100%;
   display: flex;
   margin-top: 50px;
+  justify-content: space-between;
+  gap: 30px;
 }
 .card {
   border-radius: 10px 10px;
   overflow: hidden;
   height: auto;
-  margin: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 30px 30px;
   font-weight: 600;
@@ -49,13 +50,11 @@
   line-height: 35px;
   margin-bottom: 10px;
 }
-/* line-height:17px; */
 .card p {
   font-size: 15px;
   font-weight: 500;
   margin: 0px;
   color: #505050;
-  /* color:#303030; */
 }
 .card:hover {
   transform: scale(1.06);
@@ -88,11 +87,18 @@
   .homeservice-heading {
     font-size: 35px;
   }
+  .card {
+    max-width: 400px;
+  }
   .card h2 {
     font-size: 18px;
   }
   .card p {
     font-size: 14px;
+  }
+  .card-warper{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -106,10 +112,17 @@
   .card h2 {
     font-size: 18px;
   }
+  .card{
+    max-width: 400px;
+  }
   .card p {
     font-size: 14px;
   }
+  .card-warper{
+    flex-direction: column;
+  }
 }
+
 
 @media only screen and (max-width: 575px) {
   

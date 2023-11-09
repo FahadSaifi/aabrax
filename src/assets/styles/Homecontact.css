@@ -91,3 +91,23 @@
     margin-top: 80px;
 }
 /* contact form ends */
+
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-form{
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media only screen and (max-width: 575px) {
+    .container {
+      max-width: 100%;
+      padding: 0 16px;
+    }
+  }

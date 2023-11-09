@@ -5,6 +5,7 @@ import hw2 from "../assets/images/quality.png";
 import hw3 from "../assets/images/tag.png";
 const Homeservices = () => {
   return (
+    <div className="container">
     <div className="homeservices">
       <h2 className="homeservice-heading">
         <span className="heading">Why Choose Us</span>
@@ -38,6 +39,7 @@ const Homeservices = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
