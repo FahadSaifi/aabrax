@@ -3,13 +3,12 @@ import "../assets/styles/Homeservices.css";
 import hw1 from "../assets/images/experience.png";
 import hw2 from "../assets/images/quality.png";
 import hw3 from "../assets/images/tag.png";
+import Heading from "./Heading";
 const Homeservices = () => {
   return (
     <div className="container">
     <div className="homeservices">
-      <h2 className="homeservice-heading">
-        <span className="heading">Why Choose Us</span>
-      </h2>
+      <Heading text={"Why choose us"}/>
       <div className="card-warper">
         <div className="card">
           <img src={hw1} alt="img" className="whychooseimg" />

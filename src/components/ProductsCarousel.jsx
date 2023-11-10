@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "../assets/styles/a.css";
 import { useNavigate } from "react-router-dom";
 import { sliderData } from "../data/CarouselData";
+import Heading from "./Heading";
 
 const Carousel = () => {
   const navigate = useNavigate();
@@ -42,9 +43,7 @@ const Carousel = () => {
   };
   return (
     <div className="product-carousel">
-      <h2 className="homeproduct-heading">
-        <span className="heading">Our Products</span>
-      </h2>
+     <Heading text={"Our Products"}/>
       <div className="container">
         <Slider {...settings}>
           {sliderData.map((elm) => {

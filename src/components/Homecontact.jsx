@@ -4,6 +4,7 @@ import { IoLocationSharp, IoCall ,} from "react-icons/io5";
 import { FaTelegramPlane, FaGlobeAsia } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Heading from "./Heading";
 
 const Homecontact = () => {
   const [input, setInput] = useState({
@@ -51,35 +52,32 @@ const Homecontact = () => {
   return (
     <>
       <div className="contact-container container">
-        <h2 className="home-heading contact">
-          <span className="heading">Contact Us</span>
-        </h2>
-        <table className="homecontact-body">
-          <tr>
-            <td className="contact-info">
+      <Heading text={"Contact Us"}/>
+        <div className="homecontact-body">
+            <div className="contact-info">
               <h3>Let's get in touch</h3>
               <p>Lorem ipsum dolor sit  adipisicing elit.</p>
-              <table className="contact-links">
-                <tr className="address">
-                  <td><IoLocationSharp className="icons"/></td>
-                  <td><b>Address:</b> XXY, sotruk <br />kyorlhiogheuo, johyr-118</td>
-                </tr>
-                <tr className="call">
-                  <td><IoCall className="icons"/></td>
-                  <td><b>Phone:</b> +00 9999 999</td>
-                </tr>
-                <tr className="email">
-                  <td><FaTelegramPlane className="icons"/></td>
-                  <td><b>Email:</b> info@yoursite.com</td>
-                </tr>
-                <tr className="website">
-                  <td><FaGlobeAsia className="icons"/></td>
-                  <td><b>Website:</b> yoursite.com</td>
-                </tr>
-              </table>
-            </td>
+              <div className="contact-links">
+                <div className="info-row">
+                  <div><IoLocationSharp className="icons"/></div>
+                  <div><b className="info-heading">Address:</b> XXY, sotruk <br />kyorlhiogheuo, johyr-118</div>
+                </div>
+                <div className="info-row">
+                  <div><IoCall className="icons"/></div>
+                  <div><b className="info-heading">Phone:</b> +00 9999 999</div>
+                </div>
+                <div className="info-row">
+                  <div><FaTelegramPlane className="icons"/></div>
+                  <div><b className="info-heading">Email:</b> info@yoursite.com</div>
+                </div>
+                <div className="info-row">
+                  <div><FaGlobeAsia className="icons"/></div>
+                  <div><b className="info-heading">Website:</b> yoursite.com</div>
+                </div>
+              </div>
+            </div>
 
-            <td className="contact-form">
+            <div className="contact-form">
               <h3>Get in touch</h3>
               <form onSubmit={handleSubmit}>
                 <div className="name">
@@ -92,7 +90,7 @@ const Homecontact = () => {
                       name="fname"
                       type="text"
                       id="fname"
-                      placeholder="First name"
+                      placeholder="first name"
                       onChange={handleChange}
                       required
                     />
@@ -106,7 +104,7 @@ const Homecontact = () => {
                       name="lname"
                       type="text"
                       id="lname"
-                      placeholder="Last name"
+                      placeholder="last name"
                       onChange={handleChange}
                       required
                     />
@@ -149,7 +147,7 @@ const Homecontact = () => {
                     name="msg"
                     id="msg"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="message"
                     onChange={handleChange}
                     required
                   ></textarea>
@@ -161,11 +159,10 @@ const Homecontact = () => {
                   value="Send Message"
                 />
               </form>
-            </td>
-          </tr>
+            </div>
           
 
-        </table>
+        </div>
       </div>
     </>
   )

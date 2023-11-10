@@ -6,42 +6,53 @@
 }
 
 .homecontact-body{
-    margin-block: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 570px;
+    margin-block: 0rem 4rem;
 }
-.homecontact-body>tr>td{
+.homecontact-body .contact-info, .homecontact-body .contact-form{
     padding-inline: 1.8rem;
     vertical-align: top;
+    height: 100%;
 }
 .contact-form{
-    width: 1%;
+    width: 70%;
 }
 .contact-info{
     color:white;
     background-color: #febf32;
     width: 30%;
 }
-.homecontact-body>tr>td>h3{
+.homecontact-body>div>h3{
     font-weight: 600;
     font-size: 24px;
 }
 /* contact info start */
-.contact-info>p{
-    margin-bottom: 0;
-}
 .icons{
     padding:6px;
     font-size: 1.3rem;
     border:1px solid #fff;
     border-radius: 50%;
-    margin-right: 10px;
 }
 .contact-links{
-    border-spacing: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
 }
-.contact-links>tr>td{
-    vertical-align: top;
+.contact-links .info-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
 }
-.contact-links>tr>td>b{
+.contact-links .info-heading{
     font-weight: 600;
 }
 /* contact info ends */
@@ -52,7 +63,6 @@
     display: block;
     width: 100%;
     font-family: inherit;
-    margin-bottom: 20px;
     padding-block: 6px;
     border:none;
     outline:none !important;
@@ -60,9 +70,10 @@
 }
 .contact-container .contact-inputs{
     border-bottom:2px solid #ddd;
+    margin-bottom: 20px;
 }
 .contact-container .contact-labels{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-transform: capitalize;
 } 
 
@@ -90,10 +101,6 @@
 .contact-container form .fname,.contact-container form .lname{
     width: 100%;
 }
-
-.home-heading.contact{
-    margin-top: 80px;
-}
 /* contact form ends */
 
 @media only screen and (min-width: 991px) and (max-width: 1024px){
@@ -109,19 +116,31 @@
     .home-heading.contact {
         font-size: 33px;
     }
+    .homecontact-body .contact-form{
+        width: 100%;
+        padding-inline: 0;
+    }
   }
   
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .contact-info{
         display: none;
     }
-    .home-heading.contact {
+    .home-heading .contact {
         font-size: 30px;
+    }
+    .homecontact-body .contact-form{
+        width: 100%;
+        padding-inline: 0;
     }
   }
   
   @media only screen and (max-width: 575px) {
     .contact-info{
         display: none;
+    }
+    .homecontact-body .contact-form{
+        width: 100%;
+        padding-inline: 0;
     }
   }

@@ -1,7 +1,7 @@
 .homeservices {
   margin-top: 30px;
   width: 100%;
-  margin: 30px auto;
+  margin: 0 auto;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -30,7 +30,6 @@
 .card-warper {
   width: 100%;
   display: flex;
-  margin-top: 50px;
   justify-content: space-between;
   gap: 30px;
 }
