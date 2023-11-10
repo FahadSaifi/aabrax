@@ -48,18 +48,20 @@
 
 /* contact form start */
 
-.contact-container form input,.contact-container form textarea{
+.contact-container .contact-inputs,.contact-container .contact-labels{
     display: block;
     width: 100%;
     font-family: inherit;
     margin-bottom: 20px;
     padding-block: 6px;
     border:none;
-    border-bottom:2px solid #ddd;
     outline:none !important;
     font-size: 12px;
 }
-.contact-container form label{
+.contact-container .contact-inputs{
+    border-bottom:2px solid #ddd;
+}
+.contact-container .contact-labels{
     margin-bottom: 10px;
     text-transform: capitalize;
 } 
@@ -79,12 +81,14 @@
     cursor: pointer;
 }
 
-.contact-container form .name-email{
+.contact-container form .name{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
 }
-.contact-container form .name,.contact-container form .email{
-    width: 45%;
+.contact-container form .fname,.contact-container form .lname{
+    width: 100%;
 }
 
 .home-heading.contact{
