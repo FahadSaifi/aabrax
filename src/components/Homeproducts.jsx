@@ -3,6 +3,7 @@ import "../assets/styles/Homeproducts.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { prodData } from "../data/ProductData";
+import Heading from "./Heading";
 
 const Homeproducts = () => {
   const handleDragStart = (e) => e.preventDefault();
@@ -28,9 +29,7 @@ const Homeproducts = () => {
   return (
     <>
       <div className="container">
-        <h2 className="homeproduct-heading">
-          <span className="heading">Our Products</span>
-        </h2>
+       <Heading text={"Our"}/>
         <div className="homeproduct-carousel">
           <AliceCarousel
             mouseTracking

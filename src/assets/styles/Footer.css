@@ -17,7 +17,7 @@
 .footer-links{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 .footer .nav-links {
@@ -32,4 +32,43 @@
   color: #d3d3d3;
   padding-bottom: 2rem;
   text-align: left;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .nav-links {
+    font-size: 15px;
+  }
+  .footer-logo .brand-logo{
+    width: 90px;
+  }
+  .copyright{
+    font-size: 15px;
+  }
+  .footer-links{
+    transform: translateX(-80px)
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footer .nav-links {
+    font-size: 14px;
+  }
+  .footer-logo .brand-logo{
+    width: 80px;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+  .footer-links{
+    transform: translateX(-130px)
+  }
+  
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
 }

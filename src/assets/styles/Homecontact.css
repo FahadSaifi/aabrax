@@ -13,7 +13,7 @@
     vertical-align: top;
 }
 .contact-form{
-    width: 70%;
+    width: 1%;
 }
 .contact-info{
     color:white;
@@ -96,22 +96,32 @@
 }
 /* contact form ends */
 
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+    .home-heading.contact {
+        font-size: 35px;
+    }
+}
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .contact-form{
-        width: 100%;
+    .contact-info{
+        display: none;
+    }
+    .home-heading.contact {
+        font-size: 33px;
     }
   }
   
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .container {
-      max-width: 540px;
+    .contact-info{
+        display: none;
+    }
+    .home-heading.contact {
+        font-size: 30px;
     }
   }
   
   @media only screen and (max-width: 575px) {
-    .container {
-      max-width: 100%;
-      padding: 0 16px;
+    .contact-info{
+        display: none;
     }
   }
