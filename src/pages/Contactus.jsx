@@ -21,20 +21,20 @@ const Contactus = () => {
                   <div className="name">
                     <div className="fname">
                       <label className="contact-labels" htmlFor="fname">First Name</label>
-                      <input className="contact-inputs" type="text" id="fname" placeholder="First name" required/>
+                      <input className="contact-inputs" name="first-name" type="text" id="fname" placeholder="First name" required/>
                     </div>
                     <div className="lname">
                       <label className="contact-labels" htmlFor="lname">Last Name</label>
-                      <input className="contact-inputs" type="text" id="lname" placeholder="Last name" required/>
+                      <input className="contact-inputs" name="last-name" type="text" id="lname" placeholder="Last name" required/>
                     </div>
                   </div>
                   <div className="email">
                       <label className="contact-labels" htmlFor="email">Email Address</label>
-                      <input className="contact-inputs" type="email" id="email" placeholder="you@company.com" required/>
+                      <input className="contact-inputs" name="email-address"type="email" id="email" placeholder="you@company.com" required/>
                   </div>
                   <div className="phone">
                     <label className="contact-labels" htmlFor="phone">Phone Number</label>
-                    <input className="contact-inputs" type="number" id="phone" placeholder="+91 1234567890" required/>
+                    <input className="contact-inputs" name="phone-number" type="number" id="phone" placeholder="+91 1234567890" required/>
                   </div>
                   <div className="msg">
                     <label className="contact-labels" htmlFor="msg">Message</label>
