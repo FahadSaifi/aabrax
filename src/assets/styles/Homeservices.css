@@ -119,10 +119,13 @@
   }
   .card-warper{
     flex-direction: column;
+    align-items: center;
   }
 }
 
 
 @media only screen and (max-width: 575px) {
-  
+  .card-warper{
+    flex-direction: column;
+  }
 }

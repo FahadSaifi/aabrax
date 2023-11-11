@@ -143,4 +143,11 @@
         width: 100%;
         padding-inline: 0;
     }
+    .contact-container form .name {
+        flex-direction: column;
+        gap: 0;
+    }
+    .homecontact-body>div>h3{
+        margin-top: 0;
+    }
   }

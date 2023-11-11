@@ -262,5 +262,28 @@ a{
 }
 
 @media only screen and (max-width: 575px) {
-  
+  .logo {
+    width: 90px;
+  }
+  .layout{
+    position: fixed;
+    top: 0;
+    left: -70%;
+    background: white;
+    width: 70%;
+    height: 100vh;
+  }
+  .navlinks-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-inline-start: 0;
+  }
+  .nav-links{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .nav-route{
+    color: #febf32;
+  }
 }

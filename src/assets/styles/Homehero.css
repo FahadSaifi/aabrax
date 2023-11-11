@@ -94,5 +94,15 @@
 }
 
 @media only screen and (max-width: 575px) {
-
+  .hero-content-wrapper {
+    left: 5%;
+    bottom: 20%;
+  }
+  .hero-heading {
+    font-size: 30px;
+    padding-right: 16px;
+  }
+  .hero-content{
+    padding-right: 16px;
+  }
 }
