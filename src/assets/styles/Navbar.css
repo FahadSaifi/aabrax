@@ -1,4 +1,4 @@
-a{
+a {
   text-decoration: none;
 }
 .navbar {
@@ -61,6 +61,7 @@ a{
   gap: 30px;
 }
 
+.tel-btn-2,
 .tel-btn {
   width: 130px;
   height: 40px;
@@ -79,6 +80,10 @@ a{
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+}
+
+.tel-btn {
+  display: none;
 }
 
 .call-icon {
@@ -215,6 +220,30 @@ a{
   border-radius: 6px;
 }
 
+.bars {
+  display: none;
+}
+
+.nav-close {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #febf32;
+}
+
+.nav-opac-layer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .logo {
     width: 90px;
@@ -253,7 +282,7 @@ a{
   .navlinks-wrapper {
     gap: 25px;
   }
-  
+
   .tel-btn {
     width: 90px;
     height: 30px;
@@ -264,26 +293,54 @@ a{
 @media only screen and (max-width: 575px) {
   .logo {
     width: 90px;
+    margin-left: 20px;
   }
-  .layout{
+  .layout {
     position: fixed;
     top: 0;
-    left: -70%;
-    background: white;
-    width: 70%;
+    left: -500px;
+    background: #fff;
+    width: 300px;
     height: 100vh;
+    transition: 0.1s ease-in;
   }
-  .navlinks-wrapper{
+  .layout.active {
+    left: 0;
+  }
+  .navlinks-wrapper {
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding-inline-start: 0;
   }
-  .nav-links{
+  .nav-links {
     font-size: 20px;
     font-weight: 600;
   }
-  .nav-route{
+  .nav-route {
     color: #febf32;
+  }
+  .tel-btn-2 {
+    display: none;
+  }
+  .tel-btn {
+    display: flex;
+    margin: 0 auto;
+  }
+  .bars {
+    display: block;
+  }
+  .nav-bars {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .nav-close {
+    display: block;
+  }
+  .nav-opac-layer.active {
+    display: block;
   }
 }
