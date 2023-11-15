@@ -48,11 +48,9 @@
 .about-description {
   margin-top: 40px;
 }
-
-.company-details {
-  margin-top: 40px;
+.company-details-section{
+  padding-bottom: 20px;
 }
-
 /* founder */
 .founder {
   display: flex;
@@ -86,3 +84,95 @@
 .vision {
   margin-top: 40px;
 }
+.our-vision-section{
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .about-hero h2 {
+    font-size: 2.4rem;
+  }
+  .about-us-tagline{
+    font-size: 15px;
+  }
+  .contact-btn{
+    width: 150px;
+    height: 46px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .about-description{
+    font-size: 15px;
+  }
+  .company-details{
+    font-size: 15px;
+  }
+  .founder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .founder-photo {
+    width: 60%;
+  }
+  .founder-details {
+    width: 100%;
+  }
+  .founder-content-desc{
+    font-size: 15px;
+  }
+  .vision {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .about-hero h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .about-us-tagline{
+    font-size: 14px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .contact-btn{
+    width: 150px;
+    height: 46px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .about-description{
+    font-size: 15px;
+  }
+  .company-details{
+    font-size: 15px;
+  }
+  .founder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .founder-photo {
+    width: 100%;
+  }
+  .founder-details {
+    width: 100%;
+  }
+  .founder-content-desc{
+    font-size: 15px;
+  }
+  .vision {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
+  .about-hero {
+    height: 100vh;
+  }
+} 
+
