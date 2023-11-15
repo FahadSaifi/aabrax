@@ -106,7 +106,7 @@
   .slick-prev {
     left: 43%;
   }
-  
+
   .slick-next {
     right: 43%;
   }
@@ -123,17 +123,25 @@
   .slick-prev {
     left: 41%;
   }
-  
+
   .slick-next {
     right: 41%;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .slick-next{
-    right: 30% ;
+  .slick-next {
+    right: 30%;
   }
-  .slick-prev{
-    left: 40% ;
+  .slick-prev {
+    left: 40%;
+  }
+  .product-card-description{
+    font-size: 15px;
+    height: 160px;
+  }
+  .product-card-btn{
+    height: 46px;
+    font-size: 15px;
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import v1 from "../assets/videos/v1.webm";
 import "../assets/styles/Homehero.css";
 import { useNavigate } from "react-router";
 
@@ -9,7 +8,7 @@ const Hero = () => {
     <>
       <div className="video-wrapper">
         <div className="opac-layer"></div>
-        <div className="hero-content-wrapper">
+        <div className="hero-content-wrapper container">
           <h1 className="hero-heading">
             Have over 25 years of experience <br /> with excellent reviews.
           </h1>

@@ -107,6 +107,9 @@
     .home-heading.contact {
         font-size: 35px;
     }
+    .contact-container .contact-labels{
+        font-size: 15px;
+    }
 }
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -120,6 +123,9 @@
         width: 100%;
         padding-inline: 0;
     }
+    .contact-container .contact-labels{
+        font-size: 15px;
+    }
   }
   
   @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -132,6 +138,9 @@
     .homecontact-body .contact-form{
         width: 100%;
         padding-inline: 0;
+    }
+    .contact-container .contact-labels{
+        font-size: 15px;
     }
   }
   
@@ -149,5 +158,13 @@
     }
     .homecontact-body>div>h3{
         margin-top: 0;
+    }
+    .contact-container form input[type=submit] {
+        width: 150px;
+        height: 46px;
+        font-size: 15px;
+    }
+    .contact-container .contact-labels{
+        font-size: 15px;
     }
   }

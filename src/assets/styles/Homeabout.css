@@ -122,4 +122,15 @@
   .home-about-right-col{
     display: none;
   }
+  .home-about-second-heading{
+    font-size: 30px;
+  }
+  .home-about-description{
+    font-size: 15px;
+  }
+  .hero-about-btn{
+    width: 150px;
+    height: 46px;
+    font-size: 15px;
+  }
 }
