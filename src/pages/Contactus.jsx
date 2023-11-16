@@ -29,23 +29,28 @@ const Contactus = () => {
     e.preventDefault();
     axios({
       method: "post",
-      url: ('https://saifi.co.in/mail.php'),
+      url: "https://saifi.co.in/mail.php",
       withCredentials: false,
-      header:('Access-Control-Allow-Origin: *'),
+      header: "Access-Control-Allow-Origin: *",
       data: {
         fname: input.fname,
         lname: input.lname,
         email: input.email,
         phone: input.phone,
-        msg: input.msg
-      }
-    }).then((res)=>{console.log(res)}).catch((error)=>{
-      console.log(error);
+        msg: input.msg,
+      },
     })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   useEffect(() => {
     document.title = "Aabrax | Contact Us";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>

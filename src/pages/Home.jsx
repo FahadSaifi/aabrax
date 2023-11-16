@@ -8,16 +8,17 @@ import { useEffect } from "react";
 import ClientsSlider from "../components/ClientsSlider";
 
 const Home = () => {
-  useEffect(()=>{
-    document.title = "Aabrax | Home"
-  },[])
+  useEffect(() => {
+    document.title = "Aabrax | Home";
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero />
       <Homeabout />
       <ProductsCarousel />
       <Homeservices />
-      <ClientsSlider/>
+      <ClientsSlider />
       <Homecontact />
     </>
   );

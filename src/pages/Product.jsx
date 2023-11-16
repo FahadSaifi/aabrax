@@ -2,8 +2,8 @@ import React from "react";
 import { prodData } from "../data/ProdData";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../assets/styles/Products.css";
 import { tableData } from "../data/TableData";
+import "../assets/styles/Products.css";
 
 const Product = () => {
   const [right, setRight] = useState();
@@ -22,6 +22,7 @@ const Product = () => {
   useEffect(() => {
     document.title = "Aabrax | Products";
     id == 1 ? setRight(true) : setRight(false);
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (
@@ -66,194 +67,196 @@ const Product = () => {
               <h2 className="prod-features">
                 Technical Data about Our {elm.secondTitle}
               </h2>
-              <table className="technical-data-table">
-                <thead className="technical-data-head">
-                  {right
-                    ? filterTable2.map((elm) => {
-                        return (
-                          <>
-                            <tr className="technical-data-row">
-                              {elm.model.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.chain.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.trolley.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.track.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.wc.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.drive.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.tensionUnit.map((item) => {
-                                return (
-                                  <td className="technical-data-content">
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                          </>
-                        );
-                      })
-                    : filterTable.map((elm) => {
-                        return (
-                          <>
-                            <tr className="technical-data-row">
-                              {elm.cp.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.lw.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.gd.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.Sb.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.ex.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.lk.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.bg.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.tk.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                            <tr className="technical-data-row">
-                              {elm.wc.map((item, index) => {
-                                return (
-                                  <td
-                                    className="technical-data-content"
-                                    key={index}
-                                  >
-                                    {item}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                          </>
-                        );
-                      })}
-                </thead>
-              </table>
+              <div className="table-wrapper">
+                <table className="technical-data-table">
+                  <thead className="technical-data-head">
+                    {right
+                      ? filterTable2.map((elm) => {
+                          return (
+                            <>
+                              <tr className="technical-data-row">
+                                {elm.model.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.chain.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.trolley.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.track.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.wc.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.drive.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.tensionUnit.map((item) => {
+                                  return (
+                                    <td className="technical-data-content">
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                            </>
+                          );
+                        })
+                      : filterTable.map((elm) => {
+                          return (
+                            <>
+                              <tr className="technical-data-row">
+                                {elm.cp.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.lw.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.gd.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.Sb.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.ex.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.lk.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.bg.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.tk.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                              <tr className="technical-data-row">
+                                {elm.wc.map((item, index) => {
+                                  return (
+                                    <td
+                                      className="technical-data-content"
+                                      key={index}
+                                    >
+                                      {item}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                            </>
+                          );
+                        })}
+                  </thead>
+                </table>
+              </div>
             </div>
           </div>
         </div>

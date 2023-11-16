@@ -11,9 +11,10 @@ const Product = () => {
     return elm.id == id;
   });
 
-  useEffect(()=>{
-    document.title = "Aabrax | Solutions"
-  },[])
+  useEffect(() => {
+    document.title = "Aabrax | Solutions";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

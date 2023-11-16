@@ -6,21 +6,24 @@ import { useEffect } from "react";
 import Heading from "../components/Heading";
 
 const About = () => {
-  useEffect(()=>{
-    document.title = "Aabrax | About Us"
-  },[])
+  useEffect(() => {
+    document.title = "Aabrax | About Us";
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="about-hero">
         <h2>Aabrax Overhead Conveyor</h2>
-        <p className="about-us-tagline">Engineering high-quality overhead conveyors for any application.</p>
+        <p className="about-us-tagline">
+          Engineering high-quality overhead conveyors for any application.
+        </p>
         <Link to="/contact" className="contact-btn">
           Contact Us
         </Link>
       </div>
       <div className="container">
         <div className="about-us-section">
-         <Heading text={"About Us"}/>
+          <Heading text={"About Us"} />
           <p className="about-description">
             Aabrax overhead conveyor is a family-owned and operated overhead
             conveyor company with over 10 years of experience. We are mainly
@@ -39,7 +42,7 @@ const About = () => {
       <div className="full-bg">
         <div className="container">
           <div className="company-details-section">
-          <Heading text={"Company Details"}/>
+            <Heading text={"Company Details"} />
             <p className="company-details">
               The company was founded in 2013 by Mohammad Jareef and has since
               grown to become one of the leading manufacturers of overhead
@@ -86,7 +89,7 @@ const About = () => {
       <div className="full-bg">
         <div className="container">
           <div className="our-vision-section">
-          <Heading text={"Our Vision and Mission"}/>
+            <Heading text={"Our Vision and Mission"} />
             <p className="vision">
               Aabrax Overhead Conveyor is a leading supplier of overhead
               conveyor systems for the commercial, industrial, and manufacturing
