@@ -67,6 +67,9 @@
 .prod-list {
   margin-bottom: 2rem;
 }
+.table-wrapper {
+    overflow-x: auto;
+}
 .technical-data-table{
   width: 100%;
   margin-block: 2rem;
@@ -136,7 +139,9 @@
   }
   .prod-desc {
     flex-direction: column;
-  }
+    gap: 16px;
+    margin-top: 30px;
+}
   .prod-info-title {
     font-size: 22px;
   }
@@ -146,6 +151,9 @@
   .prod-info {
     font-size: 15px;
   }
+  .prod-list{
+    margin-bottom: 1rem;
+  }
   .prod-list li {
     font-size: 15px;
   }
@@ -153,6 +161,9 @@
     font-size: 15px;
     max-width: 300px;
     text-align: center;
+  }
+  .technical-data-table{
+    margin-block: 1rem 2rem;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
