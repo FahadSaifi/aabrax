@@ -67,22 +67,23 @@
 .prod-list {
   margin-bottom: 2rem;
 }
-
 .technical-data-table{
   width: 100%;
+  margin-block: 2rem;
 }
-
-.table-wrapper{
-  width: 100%;
-  overflow-x: hidden;
-  overflow-x: auto;
+.technical-data-table>
+.technical-data-head>
+.technical-data-row>
+.technical-data-content:first-child{
+  font-weight: 600;
 }
-
-.technical-data-table{
-  margin-top: 20px;
-  width: 100%;
+.technical-data-table>
+.technical-data-head>
+.technical-data-row>
+.technical-data-content{
+  text-align: left;
+  padding-left: 3px;
 }
-
 .technical-data-table,
 .technical-data-row,
 .technical-data-content{
