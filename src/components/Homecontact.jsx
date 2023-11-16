@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Heading from "./Heading";
 import Opaclayer from "./Opaclayer";
+import Spinner from "./Spinner";
 
 const Homecontact = () => {
   const [input, setInput] = useState({
@@ -16,6 +17,7 @@ const Homecontact = () => {
     msg: "",
   });
   const [loading, setLoading] = useState(false);
+  const [spinner, setSpinner] = useState(false);
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -31,6 +33,7 @@ const Homecontact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSpinner(true);
     try {
       axios({
         method: "post",
@@ -53,6 +56,7 @@ const Homecontact = () => {
           phone: "",
           msg: "",
         });
+        setSpinner(false);
         setLoading(true);
       });
     } catch (error) {
@@ -67,6 +71,7 @@ const Homecontact = () => {
     <>
       <div className="contact-container container">
         {loading ? <Opaclayer load={setLoading} /> : null}
+        {spinner ? <Spinner load={setLoading} /> : null}
         <Heading text={"Contact Us"} />
         <div className="homecontact-body">
           <div className="contact-info">
@@ -128,6 +133,7 @@ const Homecontact = () => {
                     placeholder="First name"
                     value={input.fname}
                     onChange={handleChange}
+                    required={true}
                   />
                 </div>
                 <div className="lname">
@@ -142,6 +148,7 @@ const Homecontact = () => {
                     placeholder="Last name"
                     value={input.lname}
                     onChange={handleChange}
+                    required={true}
                   />
                 </div>
               </div>
@@ -157,6 +164,7 @@ const Homecontact = () => {
                   placeholder="you@company.com"
                   value={input.email}
                   onChange={handleChange}
+                  required={true}
                 />
               </div>
               <div className="phone">
@@ -171,6 +179,7 @@ const Homecontact = () => {
                   placeholder="+91 1234567890"
                   value={input.phone}
                   onChange={handleChange}
+                  required={true}
                 />
               </div>
               <div className="msg">
@@ -185,6 +194,7 @@ const Homecontact = () => {
                   placeholder="Message"
                   value={input.msg}
                   onChange={handleChange}
+                  required={true}
                 ></textarea>
               </div>
 

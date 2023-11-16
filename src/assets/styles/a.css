@@ -60,7 +60,7 @@
 .slick-next:before {
   font-size: 25px;
   color: #000;
-  line-height: 44px;
+  line-height: 43px;
 }
 
 .product-card-description {
@@ -136,11 +136,11 @@
   .slick-prev {
     left: 40%;
   }
-  .product-card-description{
+  .product-card-description {
     font-size: 15px;
     height: 160px;
   }
-  .product-card-btn{
+  .product-card-btn {
     height: 46px;
     font-size: 15px;
   }
