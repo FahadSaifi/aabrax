@@ -68,6 +68,9 @@
 }
 
 @media only screen and (max-width: 600px){
+    .contact-body{
+        margin-block: 6rem 1rem;
+    }
     .contact-form-column .name{
         display: flex;
         flex-direction: column;
