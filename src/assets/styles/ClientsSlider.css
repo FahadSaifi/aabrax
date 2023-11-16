@@ -3,6 +3,7 @@
 }
 .clients-logo-slider-wrapper{
     margin-top: 90px;
+    overflow-x: hidden;
 }
 
 .clients-logo-slider-wrapper .slick-list{

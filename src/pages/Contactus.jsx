@@ -3,6 +3,8 @@ import "../assets/styles/Contactus.css";
 import contactImg from "../assets/images/contact.jpg";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Opaclayer from "../components/Opaclayer";
+import Spinner from "../components/Spinner";
 
 const Contactus = () => {
   const [input, setInput] = useState({
@@ -12,6 +14,8 @@ const Contactus = () => {
     phone: "",
     msg: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [spinner, setSpinner] = useState(false);
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -27,6 +31,7 @@ const Contactus = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSpinner(true);
     axios({
       method: "post",
       url: "https://saifi.co.in/mail.php",
@@ -42,6 +47,15 @@ const Contactus = () => {
     })
       .then((res) => {
         console.log(res);
+        setInput({
+          fname: "",
+          lname: "",
+          email: "",
+          phone: "",
+          msg: "",
+        });
+        setSpinner(false);
+        setLoading(true);
       })
       .catch((error) => {
         console.log(error);
@@ -55,6 +69,8 @@ const Contactus = () => {
   return (
     <>
       <div className="container">
+        {loading ? <Opaclayer load={setLoading} /> : null}
+        {spinner ? <Spinner load={setLoading} /> : null}
         <div className="contact-body">
           <div className="contact-img">
             <img src={contactImg} alt="model image" />
@@ -77,6 +93,7 @@ const Contactus = () => {
                     id="fname"
                     placeholder="First name"
                     onChange={handleChange}
+                    value={input.fname}
                     required
                   />
                 </div>
@@ -91,6 +108,7 @@ const Contactus = () => {
                     id="lname"
                     placeholder="Last name"
                     onChange={handleChange}
+                    value={input.lname}
                     required
                   />
                 </div>
@@ -106,6 +124,7 @@ const Contactus = () => {
                   id="email"
                   placeholder="you@company.com"
                   onChange={handleChange}
+                  value={input.email}
                   required
                 />
               </div>
@@ -120,6 +139,7 @@ const Contactus = () => {
                   id="phone"
                   placeholder="+91 1234567890"
                   onChange={handleChange}
+                  value={input.phone}
                   required
                 />
               </div>
@@ -134,6 +154,7 @@ const Contactus = () => {
                   rows="4"
                   placeholder="Message"
                   onChange={handleChange}
+                  value={input.msg}
                   required
                 ></textarea>
               </div>
