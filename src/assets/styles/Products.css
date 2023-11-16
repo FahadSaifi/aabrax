@@ -86,11 +86,16 @@
 }
 .technical-data-table,
 .technical-data-row,
-.technical-data-content,
-.technical-data-content-2{
+.technical-data-content{
   border: 2px solid #000;
   text-align: center;
   border-collapse: collapse;
+  padding: 10px 10px;
+}
+
+.technical-data-row .technical-data-content:nth-child(1){
+  font-weight: 700;
+  text-align: left;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
