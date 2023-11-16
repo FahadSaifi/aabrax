@@ -73,76 +73,97 @@ const Product = () => {
                     {right
                       ? filterTable2.map((elm) => {
                           return (
-                            <>
+                            <React.Fragment key={elm.id}>
                               <tr className="technical-data-row">
-                                {elm.model.map((item) => {
+                                {elm.model.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.chain.map((item) => {
+                                {elm.chain.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.trolley.map((item) => {
+                                {elm.trolley.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.track.map((item) => {
+                                {elm.track.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.wc.map((item) => {
+                                {elm.wc.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.drive.map((item) => {
+                                {elm.drive.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
                               <tr className="technical-data-row">
-                                {elm.tensionUnit.map((item) => {
+                                {elm.tensionUnit.map((item, ind) => {
                                   return (
-                                    <td className="technical-data-content">
+                                    <td
+                                      className="technical-data-content"
+                                      key={ind}
+                                    >
                                       {item}
                                     </td>
                                   );
                                 })}
                               </tr>
-                            </>
+                            </React.Fragment>
                           );
                         })
                       : filterTable.map((elm) => {
                           return (
-                            <>
+                            <React.Fragment key={elm.id}>
                               <tr className="technical-data-row">
                                 {elm.cp.map((item, index) => {
                                   return (
@@ -251,7 +272,7 @@ const Product = () => {
                                   );
                                 })}
                               </tr>
-                            </>
+                            </React.Fragment>
                           );
                         })}
                   </thead>

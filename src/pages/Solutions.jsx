@@ -49,8 +49,8 @@ const Product = () => {
               </div>
               <h2 className="prod-features">Features of {elm.secondTitle}</h2>
               <ul className="prod-list">
-                {elm.features.map((item) => {
-                  return <li key={elm.id}>{item}</li>;
+                {elm.features.map((item, ind) => {
+                  return <li key={ind}>{item}</li>;
                 })}
               </ul>{" "}
             </div>

@@ -29,25 +29,32 @@ const Homecontact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios({
-      method: "post",
-      url: "https://saifi.co.in/mail.php",
-      withCredentials: false,
-      header: "Access-Control-Allow-Origin: *",
-      data: {
-        fname: input.fname,
-        lname: input.lname,
-        email: input.email,
-        phone: input.phone,
-        msg: input.msg,
-      },
-    })
-      .then((res) => {
+    try {
+      axios({
+        method: "post",
+        url: "https://saifi.co.in/mail.php",
+        withCredentials: false,
+        header: "Access-Control-Allow-Origin: *",
+        data: {
+          fname: input.fname,
+          lname: input.lname,
+          email: input.email,
+          phone: input.phone,
+          msg: input.msg,
+        },
+      }).then((res) => {
         console.log(res);
-      })
-      .catch((error) => {
-        console.log(error);
+        setInput({
+          fname: "",
+          lname: "",
+          email: "",
+          phone: "",
+          msg: "",
+        });
       });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
@@ -67,8 +74,10 @@ const Homecontact = () => {
                   <IoLocationSharp className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Address:</b> XXY, sotruk <br />
-                  kyorlhiogheuo, johyr-118
+                  <b className="info-heading">Address:</b>Delhi Road Vill.
+                  Karanpur Kala
+                  <br />
+                  Anoopshahr Distt Bulandshahr U.P. 203390 INDIA
                 </div>
               </div>
               <div className="info-row">
@@ -76,7 +85,8 @@ const Homecontact = () => {
                   <IoCall className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Phone:</b> +00 9999 999
+                  <b className="info-heading">Phone:</b> +91 9259860316,
+                  9149234471
                 </div>
               </div>
               <div className="info-row">
@@ -84,7 +94,8 @@ const Homecontact = () => {
                   <FaTelegramPlane className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Email:</b> info@yoursite.com
+                  <b className="info-heading">Email:</b>
+                  aabraxoverheadconveyor@gmail.com
                 </div>
               </div>
               <div className="info-row">
@@ -92,7 +103,7 @@ const Homecontact = () => {
                   <FaGlobeAsia className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Website:</b> yoursite.com
+                  <b className="info-heading">Website:</b>www.aabraxconveyor.com
                 </div>
               </div>
             </div>
@@ -111,7 +122,8 @@ const Homecontact = () => {
                     name="fname"
                     type="text"
                     id="fname"
-                    placeholder="first name"
+                    placeholder="First name"
+                    value={input.fname}
                     onChange={handleChange}
                     required
                   />
@@ -125,7 +137,8 @@ const Homecontact = () => {
                     name="lname"
                     type="text"
                     id="lname"
-                    placeholder="last name"
+                    placeholder="Last name"
+                    value={input.lname}
                     onChange={handleChange}
                     required
                   />
@@ -141,6 +154,7 @@ const Homecontact = () => {
                   type="email"
                   id="email"
                   placeholder="you@company.com"
+                  value={input.email}
                   onChange={handleChange}
                   required
                 />
@@ -155,6 +169,7 @@ const Homecontact = () => {
                   type="number"
                   id="phone"
                   placeholder="+91 1234567890"
+                  value={input.phone}
                   onChange={handleChange}
                   required
                 />
@@ -168,7 +183,8 @@ const Homecontact = () => {
                   name="msg"
                   id="msg"
                   rows="4"
-                  placeholder="message"
+                  placeholder="Message"
+                  value={input.msg}
                   onChange={handleChange}
                   required
                 ></textarea>
