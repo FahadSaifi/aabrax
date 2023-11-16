@@ -6,6 +6,7 @@ import Homeservices from "../components/Homeservices";
 import Homecontact from "../components/Homecontact";
 import { useEffect } from "react";
 import ClientsSlider from "../components/ClientsSlider";
+import Opaclayer from "../components/Opaclayer";
 
 const Home = () => {
   useEffect(() => {
