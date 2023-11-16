@@ -57,3 +57,31 @@
 .contact-img img{
     width: 100%;
 }
+
+@media only screen and (max-width: 1024px){
+    .contact-img{
+        display: none;
+    }
+    .contact-form-column{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .contact-form-column .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .contact-heading{
+        font-size: 20px;
+    }
+    .contact-tagline{
+        font-size: 14px;
+    }
+    .contact-form-column .contact-inputs{
+        padding: 7px;
+        font-size: 14px;
+    }
+}
