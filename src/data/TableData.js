@@ -1,0 +1,36 @@
+export const tableData = [
+    {
+        id: 1,
+        model: ["Model","X-348", "X-458", "X-678"],
+        chain: ["Chain","3","4","6"],
+        trolley: ["Trolley","3","4","6"], 
+        track: ["Track","100mm", "125mm", "150mm"],
+        wc: ["Weight Capacity","100Kgs", "210Kgs", "400Kgs"], 
+        drive: ["Drive","Catterpillar & Sprocket" ,"Catterpillar & Sprocket", "Catterpillar & Sprocket"], 
+        tensionUnit: ["Tension Unit","Screw Types","Screw Types","Screw Types"],
+    },
+    {
+        id: 2,
+        cp: ["Chain Pitch","6" ,"8" ,"9", "10" ,"12"],
+        lw: ["Load Wheel","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm"],
+        gd: ["Guide Wheel","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm"], 
+        Sb: ["Crucifarm","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness",],
+        ex: ["Excel","14mm Dia","14mm Dia","14mm Dia","14mm Dia","14mm Dia",], 
+        lk: ["Link","6mm Thick","6mm Thick","6mm Thick","6mm Thick","6mm Thick",], 
+        bg: ["Bearing","Solid Bearing","Solid Bearing","Solid Bearing","Solid Bearing","Solid Bearing",], 
+        tk: ["Track","35x35x5","35x35x5","35x35x5","35x35x5","35x35x5",], 
+        wc: ["Weight","80 Kgs","80 Kgs","80 Kgs","80 Kgs","80 Kgs",], 
+    },
+    {
+        id: 3,
+        cp: ["Chain Pitch","6" ,"8" ,"9", "10" ,"12"],
+        lw: ["Load Wheel","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm"],
+        gd: ["Guide Wheel","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm","47mm OD x 14mm"], 
+        Sb: ["Crucifarm","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness","60 x 25mm Thickness",],
+        ex: ["Excel","14mm Dia","14mm Dia","14mm Dia","14mm Dia","14mm Dia",], 
+        lk: ["Link","6mm Thick","6mm Thick","6mm Thick","6mm Thick","6mm Thick",], 
+        bg: ["Bearing","Solid Bearing","Solid Bearing","Solid Bearing","Solid Bearing","Solid Bearing",], 
+        tk: ["Track","35x35x5","35x35x5","35x35x5","35x35x5","35x35x5",], 
+        wc: ["Weight","80 Kgs","80 Kgs","80 Kgs","80 Kgs","80 Kgs",], 
+    }
+];

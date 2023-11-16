@@ -3,6 +3,7 @@ import "../assets/styles/about.css";
 import { Link } from "react-router-dom";
 import founder from "../assets/images/founder.jpg";
 import { useEffect } from "react";
+import Heading from "../components/Heading";
 
 const About = () => {
   useEffect(()=>{
@@ -12,16 +13,14 @@ const About = () => {
     <>
       <div className="about-hero">
         <h2>Aabrax Overhead Conveyor</h2>
-        <p>Engineering high-quality overhead conveyors for any application.</p>
+        <p className="about-us-tagline">Engineering high-quality overhead conveyors for any application.</p>
         <Link to="/contact" className="contact-btn">
           Contact Us
         </Link>
       </div>
       <div className="container">
-        <div className="about-us section">
-          <h2 className="home-heading">
-            <span className="heading">About Us</span>
-          </h2>
+        <div className="about-us-section">
+         <Heading text={"About Us"}/>
           <p className="about-description">
             Aabrax overhead conveyor is a family-owned and operated overhead
             conveyor company with over 10 years of experience. We are mainly
@@ -39,10 +38,8 @@ const About = () => {
       </div>
       <div className="full-bg">
         <div className="container">
-          <div className="company-details section">
-            <h2 className="home-heading">
-              <span className="heading">Company Details</span>
-            </h2>
+          <div className="company-details-section">
+          <Heading text={"Company Details"}/>
             <p className="company-details">
               The company was founded in 2013 by Mohammad Jareef and has since
               grown to become one of the leading manufacturers of overhead
@@ -70,10 +67,7 @@ const About = () => {
             <img src={founder} alt="founder-img" />
           </div>
           <div className="founder-details">
-            <h2 className="home-heading founder-heading">
-              <span className="">Our Founder</span>
-            </h2>
-            <p>
+            <p className="founder-content-desc">
               Mohammad Jareef is the proud owner of Aabrax Overhead Conveyor, a
               leading conveyor manufacturer. Aabrax Overhead Conveyor has been
               supplying advanced overhead conveyor systems since 2013, and
@@ -91,10 +85,8 @@ const About = () => {
       </div>
       <div className="full-bg">
         <div className="container">
-          <div className="our-vision section">
-            <h2 className="home-heading">
-              <span className="heading">Our Vision and Mission</span>
-            </h2>
+          <div className="our-vision-section">
+          <Heading text={"Our Vision and Mission"}/>
             <p className="vision">
               Aabrax Overhead Conveyor is a leading supplier of overhead
               conveyor systems for the commercial, industrial, and manufacturing
