@@ -2,8 +2,8 @@ export const tableData = [
   {
     id: 1,
     model: ["Model", "X-348", "X-458", "X-678"],
-    chain: ["Chain", "3", "4", "6"],
-    trolley: ["Trolley", "3", "4", "6"],
+    chain: ["Chain", '3"', '4"', '6"'],
+    trolley: ["Trolley", '3"', '4"', '6"'],
     track: ["Track (I-Beam)", "100mm", "125mm", "150mm, 200mm"],
     wc: ["Weight Capacity", "100Kgs", "210Kgs", "400Kgs"],
     drive: [
@@ -16,7 +16,7 @@ export const tableData = [
   },
   {
     id: 2,
-    cp: ["Chain Pitch", "6", "8", "9", "10", "12"],
+    cp: ["Chain Pitch", '6"', '8"', '9"', '10"', '12"'],
     lw: [
       "Load Wheel",
       "47mm OD x 12.7mm",
@@ -82,7 +82,7 @@ export const tableData = [
   },
   {
     id: 4,
-    cp: ["Chain Pitch", "6", "8", "10"],
+    cp: ["Chain Pitch", '6"', '8"', '10"'],
     lw: ["Load Wheel", "38mm OD x 12", "38mm OD x 12", "38mm OD x 12"],
     gd: ["Guide Wheel", "38mm OD x 12", "38mm OD x 12", "38mm OD x 12"],
     Sb: ["Squar Bar", "60 x 20mm", "60 x 20mm", "60 x 20mm"],
@@ -94,7 +94,7 @@ export const tableData = [
   },
   {
     id: 5,
-    cp: ["Chain Pitch", "6", "8", "9", "10", "12"],
+    cp: ["Chain Pitch", '6"', '8"', '9"', '10"', '12"'],
     lw: [
       "Load Wheel",
       "47mm OD x 14mm",
@@ -141,7 +141,7 @@ export const tableData = [
   },
   {
     id: 6,
-    cp: ["Chain Pitch", "6", "8", "9", "10", "12"],
+    cp: ["Chain Pitch", '6"', '8"', '9"', '10"', '12"'],
     lw: [
       "Load Wheel",
       "47mm OD x 14mm",
