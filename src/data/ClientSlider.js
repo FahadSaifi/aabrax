@@ -1,11 +1,11 @@
-import l1 from "../assets/images/logos/l1.png";
-import l2 from "../assets/images/logos/l2.png";
-import l3 from "../assets/images/logos/l3.png";
-import l4 from "../assets/images/logos/l4.png";
-import l5 from "../assets/images/logos/l5.png";
-import l6 from "../assets/images/logos/l6.png";
-import l7 from "../assets/images/logos/l7.png";
-import l8 from "../assets/images/logos/l8.png";
+import l1 from "../assets/images/logos/l1.webp";
+import l2 from "../assets/images/logos/l2.webp";
+import l3 from "../assets/images/logos/l3.webp";
+import l4 from "../assets/images/logos/l4.webp";
+import l5 from "../assets/images/logos/l5.webp";
+import l6 from "../assets/images/logos/l6.webp";
+import l7 from "../assets/images/logos/l7.webp";
+import l8 from "../assets/images/logos/l8.webp";
 
 
 export const clientData = [

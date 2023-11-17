@@ -1,15 +1,15 @@
-import ibeam from "../assets/images/products/ibeam.jpg";
-import ohc2 from "../assets/images/products/ohc2.png";
-import wheelbanner from "../assets/images/4wheelbanner.jpg";
-import wheelbanner2 from "../assets/images/4wheel.jpg";
-import gcbanner from "../assets/images/gbanner.jpg";
-import gc from "../assets/images/gc.jpg";
-import fc from "../assets/images/fc.png";
-import fcb from "../assets/images/fcb.jpg";
-import ecb from "../assets/images/products/ecb.png";
-import ec from "../assets/images/products/ec.jpg";
-import hdb from "../assets/images/products/hdb.jpg";
-import hb from "../assets/images/products/hd.png";
+import ibeam from "../assets/images/products/ibeam.webp";
+import ohc2 from "../assets/images/products/ohc2.webp";
+import wheelbanner from "../assets/images/4wheelbanner.webp";
+import wheelbanner2 from "../assets/images/4wheel.webp";
+import gcbanner from "../assets/images/gbanner.webp";
+import gc from "../assets/images/gc.webp";
+import fc from "../assets/images/fc.webp";
+import fcb from "../assets/images/fcb.webp";
+import ecb from "../assets/images/products/ecb.webp";
+import ec from "../assets/images/products/ec.webp";
+import hdb from "../assets/images/products/hdb.webp";
+import hb from "../assets/images/products/hd.webp";
 
 export const prodData = [
     {

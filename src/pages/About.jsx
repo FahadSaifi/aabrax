@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/about.css";
 import { Link } from "react-router-dom";
-import founder from "../assets/images/founder.jpg";
+import founder from "../assets/images/founder.webp";
 import { useEffect } from "react";
 import Heading from "../components/Heading";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/Contactus.css";
-import contactImg from "../assets/images/contact.jpg";
+import contactImg from "../assets/images/contact.webp";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Opaclayer from "../components/Opaclayer";

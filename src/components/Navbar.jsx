@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/Navbar.css";
 import { useState } from "react";
@@ -38,9 +38,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-links submenu-parent">
-                <span className="nav-route">
-                  Products
-                </span>
+                <span className="nav-route">Products</span>
                 <ul className="submenu-wrapper">
                   <li className="dropdown-wrapper">
                     <NavLink
@@ -99,11 +97,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-links dropdown-2-wrapper">
-                <span
-                  className="nav-route"
-                >
-                  Solutions
-                </span>
+                <span className="nav-route">Solutions</span>
                 <ul className="dropdown-2">
                   <li className="nav-item">
                     <NavLink

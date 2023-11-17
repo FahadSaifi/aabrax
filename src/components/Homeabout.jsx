@@ -1,5 +1,5 @@
 import React from "react";
-import homeabout from "../assets/images/homeabout.jpg";
+import homeabout from "../assets/images/homeabout.webp";
 import "../assets/styles/Homeabout.css";
 import { useNavigate } from "react-router";
 
@@ -25,7 +25,12 @@ const Homeabout = () => {
               simplifying your material handling process and improving your
               operational efficiency.
             </p>
-            <button className="hero-about-btn" onClick={()=>navigate('/about')}>Read more</button>
+            <button
+              className="hero-about-btn"
+              onClick={() => navigate("/about")}
+            >
+              Read more
+            </button>
           </div>
           <div className="home-about-right-col">
             <img src={homeabout} alt="about us" className="home-about-img" />

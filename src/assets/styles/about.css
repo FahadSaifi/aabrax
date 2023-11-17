@@ -3,7 +3,7 @@
   margin-block: 2rem 0;
   padding-block: 2rem;
 }
-.section .secondary-heading{
+.section .secondary-heading {
   margin-block: 0 30px;
 }
 .full-bg {
@@ -15,7 +15,7 @@
   height: 60vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../images//about-banner.jpg');
+    url("../images//about-banner.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -51,7 +51,7 @@
 .about-description {
   margin-top: 40px;
 }
-.company-details-section{
+.company-details-section {
   padding-bottom: 20px;
 }
 /* founder */
@@ -61,7 +61,7 @@
   align-items: center;
   gap: 4rem;
 }
-.founder-name{
+.founder-name {
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -91,26 +91,26 @@
 .vision {
   margin-top: 40px;
 }
-.our-vision-section{
+.our-vision-section {
   padding-bottom: 10px;
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   .about-hero h2 {
     font-size: 2.4rem;
   }
-  .about-us-tagline{
+  .about-us-tagline {
     font-size: 15px;
   }
-  .contact-btn{
+  .contact-btn {
     width: 150px;
     height: 46px;
     font-size: 15px;
     margin-top: 20px;
   }
-  .about-description{
+  .about-description {
     font-size: 15px;
   }
-  .company-details{
+  .company-details {
     font-size: 15px;
   }
   .founder {
@@ -126,7 +126,7 @@
   .founder-details {
     width: 100%;
   }
-  .founder-content-desc{
+  .founder-content-desc {
     font-size: 15px;
   }
   .vision {
@@ -134,35 +134,35 @@
   }
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 575px) {
   .section {
     padding-block: 1rem;
   }
-  .section .secondary-heading{
+  .section .secondary-heading {
     margin-block: 0 20px;
   }
-  .section-p{
+  .section-p {
     margin-block: 20px;
   }
   .about-hero h2 {
     font-size: 1.8rem;
     text-align: center;
   }
-  .about-us-tagline{
+  .about-us-tagline {
     font-size: 14px;
     max-width: 300px;
     text-align: center;
   }
-  .contact-btn{
+  .contact-btn {
     width: 150px;
     height: 46px;
     font-size: 14px;
     margin-top: 20px;
   }
-  .about-description{
+  .about-description {
     font-size: 15px;
   }
-  .company-details{
+  .company-details {
     font-size: 15px;
   }
   .founder {
@@ -178,7 +178,7 @@
   .founder-details {
     width: 100%;
   }
-  .founder-content-desc{
+  .founder-content-desc {
     font-size: 15px;
   }
   .vision {
@@ -186,9 +186,8 @@
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
+@media only screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape) {
   .about-hero {
     height: 100vh;
   }
-} 
-
+}
