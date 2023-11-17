@@ -52,6 +52,9 @@
     align-items: start;
     gap: 10px;
 }
+.contact-links .info-row .word-break{
+    word-break: break-all;
+}
 .contact-links .info-heading{
     font-weight: 600;
 }
