@@ -76,17 +76,14 @@ const Homecontact = () => {
         <div className="homecontact-body">
           <div className="contact-info">
             <h3>Let's get in touch</h3>
-            <p>Lorem ipsum dolor sit adipisicing elit.</p>
+            <p>Our friendly team would love to hear from you.</p>
             <div className="contact-links">
               <div className="info-row">
                 <div>
                   <IoLocationSharp className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Address:</b>Delhi Road Vill.
-                  Karanpur Kala
-                  <br />
-                  Anoopshahr Distt Bulandshahr U.P. 203390 INDIA
+                  <b className="info-heading">Address:</b> Delhi Road Vill., Karanpur Kala, Anoopshahr, Distt Bulandshahr, U.P.-203390, INDIA
                 </div>
               </div>
               <div className="info-row">
@@ -102,9 +99,8 @@ const Homecontact = () => {
                 <div>
                   <FaTelegramPlane className="icons" />
                 </div>
-                <div>
-                  <b className="info-heading">Email:</b>
-                  aabraxoverheadconveyor@gmail.com
+                <div className="word-break">
+                  <b className="info-heading">Email:</b> aabraxoverheadconveyor@gmail.com
                 </div>
               </div>
               <div className="info-row">
@@ -112,7 +108,7 @@ const Homecontact = () => {
                   <FaGlobeAsia className="icons" />
                 </div>
                 <div>
-                  <b className="info-heading">Website:</b>www.aabraxconveyor.com
+                  <b className="info-heading">Website:</b> www.aabraxconveyor.com
                 </div>
               </div>
             </div>
