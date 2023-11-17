@@ -256,7 +256,7 @@ const Navbar = () => {
               </li>
               <li className="nav-links">
                 <a
-                  href="tel:+91 8766374874"
+                  href="tel:+91 9259860316"
                   className="tel-btn"
                   onClick={() => setNav(false)}
                 >
