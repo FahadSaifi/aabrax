@@ -34,7 +34,7 @@ export const tableData = [
       "47mm OD x 12.7mm",
     ],
     Sb: [
-      "Crucifarm",
+      "Sqarebar",
       "4mm Thickness",
       "4mm Thickness",
       "4mm Thickness",
