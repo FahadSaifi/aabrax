@@ -74,15 +74,15 @@ const About = () => {
               <span className="founder-name">"Mohammad Jareef"</span> is the
               proud owner of Aabrax Overhead Conveyor, a leading conveyor
               manufacturer. Aabrax Overhead Conveyor has been supplying advanced
-              overhead conveyor systems since 2013, and Mohammad is dedicated to
-              continuing this tradition of excellence. His ongoing product
-              development and improvement has led Aabrax Overhead Conveyor to
-              become a top producer of a variety of conveyor systems, including
-              Cleaning and pretreatment, Entertainment Industry works,
-              Woodworking Operations, wet spray painting, Tank and Cylinder
-              Finishing, Powder Coating, Fan testing Varnish Conveyor, Garment
-              handling systems, Paint Shop Conveyor, and Finishing Doors and
-              Windows Conveyors.
+              overhead conveyor systems since 2013, and Mohammad Jareef is
+              dedicated to continuing this tradition of excellence. His ongoing
+              product development and improvement has led Aabrax Overhead
+              Conveyor to become a top producer of a variety of conveyor
+              systems, including Cleaning and pretreatment, Entertainment
+              Industry works, Woodworking Operations, wet spray painting, Tank
+              and Cylinder Finishing, Powder Coating, Fan testing Varnish
+              Conveyor, Garment handling systems, Paint Shop Conveyor, and
+              Finishing Doors and Windows Conveyors.
             </p>
           </div>
         </div>
