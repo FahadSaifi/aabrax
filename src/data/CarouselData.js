@@ -1,9 +1,9 @@
-import p1 from "../assets/images/products/ohc2.png";
-import p2 from "../assets/images/products/4wheel.jpg";
-import p3 from "../assets/images/products/ec.jpg";
-import p4 from "../assets/images/products/gc.jpg";
-import p5 from "../assets/images/products/hd.png";
-import p6 from "../assets/images/products/fc.png";
+import p1 from "../assets/images/products/ohc2.webp";
+import p2 from "../assets/images/products/4wheel.webp";
+import p3 from "../assets/images/products/ec.webp";
+import p4 from "../assets/images/products/gc.webp";
+import p5 from "../assets/images/products/hd.webp";
+import p6 from "../assets/images/products/fc.webp";
 
 export const sliderData = [
     {

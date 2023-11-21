@@ -85,7 +85,7 @@ export const tableData = [
     cp: ["Chain Pitch", '6"', '8"', '10"'],
     lw: ["Load Wheel", "38mm OD x 12", "38mm OD x 12", "38mm OD x 12"],
     gd: ["Guide Wheel", "38mm OD x 12", "38mm OD x 12", "38mm OD x 12"],
-    Sb: ["Squar Bar", "60 x 20mm", "60 x 20mm", "60 x 20mm"],
+    Sb: ["Square baar", "60 x 20mm", "60 x 20mm", "60 x 20mm"],
     ex: ["Excel", "12mm Dia", "12mm Dia", "12mm Dia"],
     lk: ["Link", "3mm Thick", "3mm Thick", "3mm Thick"],
     bg: ["Bearing", "22 Bearing", "22 Bearing", "22 Bearing"],
@@ -112,7 +112,7 @@ export const tableData = [
       "47mm OD x 14mm",
     ],
     Sb: [
-      "Crucifarm",
+      "Square baar",
       "60 x 25mm Thickness",
       "60 x 25mm Thickness",
       "60 x 25mm Thickness",
@@ -159,7 +159,7 @@ export const tableData = [
       "47mm OD x 14mm",
     ],
     Sb: [
-      "Crucifarm",
+      "Square baar",
       "60 x 25mm Thickness",
       "60 x 25mm Thickness",
       "60 x 25mm Thickness",
