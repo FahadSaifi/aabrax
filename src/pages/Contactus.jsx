@@ -34,7 +34,7 @@ const Contactus = () => {
     setSpinner(true);
     axios({
       method: "post",
-      url: "https://saifi.co.in/mail.php",
+      url: "https://aabraxconveyor.com/mail.php",
       withCredentials: false,
       header: "Access-Control-Allow-Origin: *",
       data: {

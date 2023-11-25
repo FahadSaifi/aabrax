@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import "../assets/styles/a.css";
+import "../assets/styles/ProductCarousel.css";
 import { useNavigate } from "react-router-dom";
 import { sliderData } from "../data/CarouselData";
 import Heading from "./Heading";
