@@ -4,9 +4,10 @@ import Homeabout from "../components/Homeabout";
 import ProductsCarousel from "../components/ProductsCarousel";
 import Homeservices from "../components/Homeservices";
 import Homecontact from "../components/Homecontact";
+import Map from "../components/Map";
 import { useEffect } from "react";
 import ClientsSlider from "../components/ClientsSlider";
-import Opaclayer from "../components/Opaclayer";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Homeservices />
       <ClientsSlider />
       <Homecontact />
+      <Map />
     </>
   );
 };
